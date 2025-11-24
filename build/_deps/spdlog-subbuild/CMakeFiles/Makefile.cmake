@@ -7,10 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "MSYS Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake"
-  "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystem.cmake.in"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/ExternalProject.cmake"
@@ -38,7 +36,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.2.0-rc2/CMakeSystem.cmake"
   "spdlog-populate-prefix/tmp/spdlog-populate-mkdirs.cmake"
   "spdlog-populate-prefix/tmp/spdlog-populate-gitclone.cmake"
   "spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-gitinfo.txt"

@@ -82,7 +82,7 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/l
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/install.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/install/local.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/install/strip.dir
-D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/Colors.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/edit_cache.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/rebuild_cache.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/list_install_components.dir

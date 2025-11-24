@@ -126,5 +126,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/Engine/CMakeFiles/engine.dir/DependInfo.cmake"
   "src/Assignments/Triangle/CMakeFiles/MeshesMaterials.dir/DependInfo.cmake"
   "src/Assignments/House/CMakeFiles/House.dir/DependInfo.cmake"
-  "src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/DependInfo.cmake"
+  "src/Assignments/Colors/CMakeFiles/Colors.dir/DependInfo.cmake"
   )

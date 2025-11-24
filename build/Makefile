@@ -318,17 +318,17 @@ House/fast:
 .PHONY : House/fast
 
 #=============================================================================
-# Target rules for targets named MeshesMaterials_Colors
+# Target rules for targets named Colors
 
 # Build rule for target.
-MeshesMaterials_Colors: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MeshesMaterials_Colors
-.PHONY : MeshesMaterials_Colors
+Colors: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Colors
+.PHONY : Colors
 
 # fast build rule for target.
-MeshesMaterials_Colors/fast:
-	$(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build
-.PHONY : MeshesMaterials_Colors/fast
+Colors/fast:
+	$(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/build
+.PHONY : Colors/fast
 
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
@@ -368,9 +368,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... Colors"
 	@echo "... House"
 	@echo "... MeshesMaterials"
-	@echo "... MeshesMaterials_Colors"
 	@echo "... application"
 	@echo "... engine"
 	@echo "... glad"

@@ -312,6 +312,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+Colors_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors
+
+//Value Computed by CMake
+Colors_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Colors_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Colors
+
+//Value Computed by CMake
 Engine_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine
 
 //Value Computed by CMake

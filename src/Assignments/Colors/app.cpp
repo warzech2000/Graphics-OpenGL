@@ -36,12 +36,26 @@ void SimpleShapeApplication::init() {
     glEnable(GL_CULL_FACE); 
 
     std::vector<GLushort> indices = {
-        0, 1, 2,  // first base triangle
-        0, 2, 3,
-        1, 0, 4,  // first (front) side triangle
-        0, 3, 5,
-        3, 2, 6,
-        2, 1, 7,
+        // Original pyramid
+        0,1,2,
+        0,2,3,
+        1,0,4,
+        0,3,5,
+        3,2,6,
+        2,1,7,
+
+        // Cube base
+        8,9,10,
+        8,10,11,
+        0,1,9,
+        0,9,8,
+        1,2,10,
+        1,10,9,
+        2,3,11,
+        2,11,10,
+        3,0,8,
+        3,8,11
+
     };
     
     // A vector containing the x,y,z vertex coordinates + texture coords
@@ -69,7 +83,14 @@ void SimpleShapeApplication::init() {
 
         0.0f, 0.5f, 0.0f,
         0.f, 0.f,
+
+        0.5f, -1.0f, 0.5f,     0.5f, 0.809f,  // 8
+        -0.5f, -1.0f, 0.5f,    0.191f, 0.5f,  // 9
+        -0.5f, -1.0f, -0.5f,   0.5f, 0.191f,  // 10
+        0.5f, -1.0f, -0.5f,    0.809f, 0.5f,  // 11
+
     };
+
 
     // PVM uniform
 
@@ -86,7 +107,7 @@ void SimpleShapeApplication::init() {
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_));
     glBufferData(GL_UNIFORM_BUFFER, 16 * sizeof(float), 0, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     
     set_camera(new Camera);
 
@@ -121,41 +142,34 @@ void SimpleShapeApplication::init() {
 
     stbi_image_free(img);
 
+    auto house_material = new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 0.0f, 1.f)); 
 
-    //auto material = std::make_shared<xe::ColorMaterial>(glm::vec4(1.0f), 0);
-    // applying colours/texture
-    //material->set_shader(program);
     xe::ColorMaterial::set_shader(program);
     xe::ColorMaterial::init();
-
-
-    auto pyramid = new xe::Mesh;
+    
+    auto house = new xe::Mesh;
 
     size_t indices_sizeof = sizeof(indices[0]) * indices.size();
-    pyramid->allocate_index_buffer(indices_sizeof, GL_STATIC_DRAW);
-    pyramid->load_indices(0, indices_sizeof, indices.data());
+    house->allocate_index_buffer(indices_sizeof, GL_STATIC_DRAW);
+    house->load_indices(0, indices_sizeof, indices.data());
 
     size_t vertices_sizeof = sizeof(vertices[0]) * vertices.size();
-    pyramid->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
-    pyramid->load_vertices(0, vertices_sizeof, vertices.data());
+    house->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
+    house->load_vertices(0, vertices_sizeof, vertices.data());
 
-    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
-    pyramid->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
+    house->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
+    house->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
 
-    // Colours based on pyramid from CameraMovement assignment, not Textures (pink > grey)
-    pyramid->add_submesh(0, 6, new xe::ColorMaterial(glm::vec4(glm::vec3(1.f, 0.f, 1.f), 1.f)));  // base == 2 triangles == 6 vertices
-    pyramid->add_submesh(6, 9, new xe::ColorMaterial(glm::vec4(glm::vec3(1.f, 0.f, 0.f), 1.f)));  // side == 1 triangle == 3 vertices
-    pyramid->add_submesh(9, 12, new xe::ColorMaterial(glm::vec4(glm::vec3(0.f, 1.f, 0.f), 1.f)));
-    pyramid->add_submesh(12, 15, new xe::ColorMaterial(glm::vec4(glm::vec3(0.f, 0.f, 1.f), 1.f)));
-    pyramid->add_submesh(15, 18, new xe::ColorMaterial(glm::vec4(glm::vec3(1.f, 1.f, 0.f), 1.f)));
+    // Colours based on house from CameraMovement assignment, not Textures (pink > grey)
+    house->add_submesh(0, 48, house_material); 
 
     // Using texture
     // for (int i = 0; i < indices.size(); i += 3)
     // {
-    //     pyramid->add_submesh(i, i+3, new xe::ColorMaterial(glm::vec4(1.f), texture_handle));
+    //     house->add_submesh(i, i+3, new xe::ColorMaterial(glm::vec4(1.f), texture_handle));
     // }
 
-    add_submesh(pyramid);
+    add_submesh(house);
 
     // Setting the background color of the rendering window,
     // I suggest not to use white or black for better debuging.

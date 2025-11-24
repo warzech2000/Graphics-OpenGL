@@ -162,25 +162,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/rule:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/rule
-.PHONY : src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/rule
+src/Assignments/Colors/CMakeFiles/Colors.dir/rule:
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/Assignments/Colors/CMakeFiles/Colors.dir/rule
+.PHONY : src/Assignments/Colors/CMakeFiles/Colors.dir/rule
 
 # Convenience name for target.
-MeshesMaterials_Colors: src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/rule
-.PHONY : MeshesMaterials_Colors
+Colors: src/Assignments/Colors/CMakeFiles/Colors.dir/rule
+.PHONY : Colors
 
 # fast build rule for target.
-MeshesMaterials_Colors/fast:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build
-.PHONY : MeshesMaterials_Colors/fast
+Colors/fast:
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/build
+.PHONY : Colors/fast
 
 app.obj: app.cpp.obj
 .PHONY : app.obj
 
 # target to build an object file
 app.cpp.obj:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/app.cpp.obj
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/app.cpp.obj
 .PHONY : app.cpp.obj
 
 app.i: app.cpp.i
@@ -188,7 +188,7 @@ app.i: app.cpp.i
 
 # target to preprocess a source file
 app.cpp.i:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/app.cpp.i
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/app.cpp.i
 .PHONY : app.cpp.i
 
 app.s: app.cpp.s
@@ -196,7 +196,7 @@ app.s: app.cpp.s
 
 # target to generate assembly for a file
 app.cpp.s:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/app.cpp.s
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/app.cpp.s
 .PHONY : app.cpp.s
 
 main.obj: main.cpp.obj
@@ -204,7 +204,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/main.cpp.obj
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -212,7 +212,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/main.cpp.i
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -220,7 +220,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/build.make src/Assignments/Colors/CMakeFiles/MeshesMaterials_Colors.dir/main.cpp.s
+	cd "/D/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" && $(MAKE) $(MAKESILENT) -f src/Assignments/Colors/CMakeFiles/Colors.dir/build.make src/Assignments/Colors/CMakeFiles/Colors.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -235,7 +235,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MeshesMaterials_Colors"
+	@echo "... Colors"
 	@echo "... app.obj"
 	@echo "... app.i"
 	@echo "... app.s"
