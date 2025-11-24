@@ -305,17 +305,17 @@ MeshesMaterials/fast:
 .PHONY : MeshesMaterials/fast
 
 #=============================================================================
-# Target rules for targets named MeshesMaterials_House
+# Target rules for targets named House
 
 # Build rule for target.
-MeshesMaterials_House: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MeshesMaterials_House
-.PHONY : MeshesMaterials_House
+House: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 House
+.PHONY : House
 
 # fast build rule for target.
-MeshesMaterials_House/fast:
-	$(MAKE) $(MAKESILENT) -f src/Assignments/House/CMakeFiles/MeshesMaterials_House.dir/build.make src/Assignments/House/CMakeFiles/MeshesMaterials_House.dir/build
-.PHONY : MeshesMaterials_House/fast
+House/fast:
+	$(MAKE) $(MAKESILENT) -f src/Assignments/House/CMakeFiles/House.dir/build.make src/Assignments/House/CMakeFiles/House.dir/build
+.PHONY : House/fast
 
 #=============================================================================
 # Target rules for targets named MeshesMaterials_Colors
@@ -368,9 +368,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... House"
 	@echo "... MeshesMaterials"
 	@echo "... MeshesMaterials_Colors"
-	@echo "... MeshesMaterials_House"
 	@echo "... application"
 	@echo "... engine"
 	@echo "... glad"

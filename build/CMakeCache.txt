@@ -451,6 +451,15 @@ Graphics3DCode_IS_TOP_LEVEL:STATIC=ON
 Graphics3DCode_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL
 
 //Value Computed by CMake
+House_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House
+
+//Value Computed by CMake
+House_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+House_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/House
+
+//Value Computed by CMake
 MeshesMaterials_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle
 
 //Value Computed by CMake

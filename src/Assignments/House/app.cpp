@@ -36,7 +36,7 @@ void SimpleShapeApplication::init() {
     glEnable(GL_CULL_FACE); 
 
     std::vector<GLushort> indices = {
-        // Roof (triangles 0–5)
+        // Original pyramid
         0,1,2,
         0,2,3,
         1,0,4,
@@ -44,7 +44,7 @@ void SimpleShapeApplication::init() {
         3,2,6,
         2,1,7,
 
-        // Cube base (bottom + walls)
+        // Cube base
         8,9,10,
         8,10,11,
         0,1,9,
@@ -142,27 +142,32 @@ void SimpleShapeApplication::init() {
 
     stbi_image_free(img);
 
-
-    auto base_material = new xe::ColorMaterial(glm::vec4(0.0f, 1.0f, 0.0f, 1.f));  // light grey
-    auto roof_material = new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 0.0f, 1.f));  // reddish brown
+    auto house_material = new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 0.0f, 1.f)); 
 
     xe::ColorMaterial::set_shader(program);
     xe::ColorMaterial::init();
+    
     auto house = new xe::Mesh;
 
-    house->allocate_index_buffer(sizeof(indices[0]) * indices.size(), GL_STATIC_DRAW);
-    house->load_indices(0, sizeof(indices[0]) * indices.size(), indices.data());
+    size_t indices_sizeof = sizeof(indices[0]) * indices.size();
+    house->allocate_index_buffer(indices_sizeof, GL_STATIC_DRAW);
+    house->load_indices(0, indices_sizeof, indices.data());
 
-    house->allocate_vertex_buffer(sizeof(vertices[0]) * vertices.size(), GL_STATIC_DRAW);
-    house->load_vertices(0, sizeof(vertices[0]) * vertices.size(), vertices.data());
+    size_t vertices_sizeof = sizeof(vertices[0]) * vertices.size();
+    house->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
+    house->load_vertices(0, vertices_sizeof, vertices.data());
 
-    house->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);                    // position
-    house->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));  // texture coords
+    house->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
+    house->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
 
-    // Apply materials
-    house->add_submesh(0, 18, roof_material);
-    house->add_submesh(18, 48, base_material);
+    // Colours based on house from CameraMovement assignment, not Textures (pink > grey)
+    house->add_submesh(0, 48, house_material); 
 
+    // Using texture
+    // for (int i = 0; i < indices.size(); i += 3)
+    // {
+    //     house->add_submesh(i, i+3, new xe::ColorMaterial(glm::vec4(1.f), texture_handle));
+    // }
 
     add_submesh(house);
 

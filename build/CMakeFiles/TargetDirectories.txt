@@ -75,7 +75,7 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFile
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/install.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/install/local.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/install/strip.dir
-D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/MeshesMaterials_House.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/House.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/edit_cache.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/rebuild_cache.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/list_install_components.dir
