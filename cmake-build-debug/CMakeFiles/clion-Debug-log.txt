@@ -1,0 +1,26 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/kprzystalski/UJ/3d -B /Users/kprzystalski/UJ/3d/cmake-build-debug
+-- Including Cocoa support
+-- GLM: Version 0.9.9.9
+-- Build spdlog: 1.11.0
+-- Build type: Debug
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/House does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Colors does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Indices does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Uniforms does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/PVM does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Pyramid does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Resizing does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Zoom does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/CameraMovement does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Meshes does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Materials does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/MeshesMaterials does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/SceneGraph does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Textures does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/Phong does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/PBR does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/MultipleLights does not exists.
+Warning: directory /Users/kprzystalski/UJ/3d/src/Assignments/NormalMaps does not exists.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/kprzystalski/UJ/3d/cmake-build-debug

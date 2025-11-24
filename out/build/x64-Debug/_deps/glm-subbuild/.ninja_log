@@ -1,0 +1,21 @@
+# ninja log v6
+5	69	7842975149277644	glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	4fc9a5e2f93ad890
+5	69	7842975149277644	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir	4fc9a5e2f93ad890
+70	17559	7842975324168204	glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	3e7369c623631ec0
+70	17559	7842975324168204	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download	3e7369c623631ec0
+17560	19273	7842975324248383	glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	48f7bd70642481e1
+17560	19273	7842975324248383	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update	48f7bd70642481e1
+19282	19346	7842975342029913	glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	c03daed893e67bfd
+19282	19346	7842975342029913	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch	c03daed893e67bfd
+19346	19409	7842975342634862	glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	eb3abd92891c7c0
+19346	19409	7842975342634862	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure	eb3abd92891c7c0
+19409	19472	7842975343263257	glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	9bb838adf6823969
+19409	19472	7842975343263257	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build	9bb838adf6823969
+19472	19540	7842975343944863	glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	3d2c37128f0cb75c
+19472	19540	7842975343944863	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install	3d2c37128f0cb75c
+19541	19605	7842975344523122	glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	9b2d3c1662a8b092
+19541	19605	7842975344523122	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test	9b2d3c1662a8b092
+19605	19695	7842975345465190	CMakeFiles/glm-populate-complete	add2e1d00bc1126e
+19605	19695	7842975345465190	glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	add2e1d00bc1126e
+19605	19695	7842975345465190	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/CMakeFiles/glm-populate-complete	add2e1d00bc1126e
+19605	19695	7842975345465190	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-done	add2e1d00bc1126e

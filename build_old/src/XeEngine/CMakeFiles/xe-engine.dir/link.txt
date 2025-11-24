@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libxe-engine.a "CMakeFiles/xe-engine.dir/ColorMaterial.cpp.o" "CMakeFiles/xe-engine.dir/Scene.cpp.o" "CMakeFiles/xe-engine.dir/Mesh.cpp.o" "CMakeFiles/xe-engine.dir/mesh_loader.cpp.o" "CMakeFiles/xe-engine.dir/Node.cpp.o" "CMakeFiles/xe-engine.dir/PhongMaterial.cpp.o" "CMakeFiles/xe-engine.dir/stb_image.cpp.o" "CMakeFiles/xe-engine.dir/utils.cpp.o" ../../CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_1/glad/src/gl.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libxe-engine.a

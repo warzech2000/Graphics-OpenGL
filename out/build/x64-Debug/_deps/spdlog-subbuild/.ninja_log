@@ -1,0 +1,21 @@
+# ninja log v6
+6	79	7842975349907756	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir	42f0ec10919171ae
+6	79	7842975349907756	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir	42f0ec10919171ae
+81	9378	7842975442884707	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download	50e04cd3e1a8949d
+81	9378	7842975442884707	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download	50e04cd3e1a8949d
+9378	11126	7842975442933709	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update	5772a1463e285979
+9378	11126	7842975442933709	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update	5772a1463e285979
+11126	11192	7842975460970432	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch	48518ccc01a707c3
+11126	11192	7842975460970432	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch	48518ccc01a707c3
+11192	11254	7842975461624401	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure	d61ed5a04f0b0c53
+11192	11254	7842975461624401	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure	d61ed5a04f0b0c53
+11254	11316	7842975462236710	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build	318328b13b6c21a4
+11254	11316	7842975462236710	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build	318328b13b6c21a4
+11317	11378	7842975462890184	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install	ec3ebf6b0093e5c1
+11317	11378	7842975462890184	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install	ec3ebf6b0093e5c1
+11378	11438	7842975463508420	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test	45d5cb7957e7fc88
+11378	11438	7842975463508420	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test	45d5cb7957e7fc88
+11438	11522	7842975464338413	CMakeFiles/spdlog-populate-complete	bf2c58fb1afe4c19
+11438	11522	7842975464338413	spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-done	bf2c58fb1afe4c19
+11438	11522	7842975464338413	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete	bf2c58fb1afe4c19
+11438	11522	7842975464338413	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-done	bf2c58fb1afe4c19

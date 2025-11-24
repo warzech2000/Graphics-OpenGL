@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test.rule
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update.rule

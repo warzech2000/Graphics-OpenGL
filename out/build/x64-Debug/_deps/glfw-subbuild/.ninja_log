@@ -1,0 +1,21 @@
+# ninja log v6
+6	82	7842975063206739	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	55b12e0a48cc82d6
+6	82	7842975063206739	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir	55b12e0a48cc82d6
+83	5452	7842975117018776	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	dbc31728e857cd74
+83	5452	7842975117018776	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download	dbc31728e857cd74
+5452	7045	7842975117105133	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	518d771f640fe703
+5452	7045	7842975117105133	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update	518d771f640fe703
+7053	7115	7842975133671988	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	bdbee9f66cfa6f55
+7053	7115	7842975133671988	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch	bdbee9f66cfa6f55
+7115	7180	7842975134316987	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	b3baa753e2592656
+7115	7180	7842975134316987	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure	b3baa753e2592656
+7180	7242	7842975134888109	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	8ab4f5eb5dcdc58a
+7180	7242	7842975134888109	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build	8ab4f5eb5dcdc58a
+7242	7308	7842975135598551	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	5e6ffaafb257a1c4
+7242	7308	7842975135598551	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install	5e6ffaafb257a1c4
+7308	7371	7842975136177689	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	7614457b4aa2f813
+7308	7371	7842975136177689	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test	7614457b4aa2f813
+7371	7462	7842975137143192	CMakeFiles/glfw-populate-complete	cb57df2a73a04b0c
+7371	7462	7842975137143192	glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	cb57df2a73a04b0c
+7371	7462	7842975137143192	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete	cb57df2a73a04b0c
+7371	7462	7842975137143192	D:/Grafika 3D/Base/3d 2/3d/out/build/x64-Debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-done	cb57df2a73a04b0c
