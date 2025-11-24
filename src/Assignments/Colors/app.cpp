@@ -60,34 +60,27 @@ void SimpleShapeApplication::init() {
     
     // A vector containing the x,y,z vertex coordinates + texture coords
     std::vector<GLfloat> vertices = {
-        0.5f, -0.5f, 0.5f,
-        0.5f, 0.809f,
+        0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
         
-        -0.5f, -0.5f, 0.5f,
-        0.191f, 0.5f,
+        -0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
 
-        -0.5f, -0.5f, -0.5f,
-        0.5f, 0.191f,
+        -0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
 
-        0.5f, -0.5f, -0.5f,
-        0.809f, 0.5f,
+        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
 
-        0.0f, 0.5f, 0.0f,
-        0.f, 1.f,
+        0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-        0.0f, 0.5f, 0.0f,
-        1.f, 1.f,
+        0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-        0.0f, 0.5f, 0.0f,
-        1.f, 0.f,
+        0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-        0.0f, 0.5f, 0.0f,
-        0.f, 0.f,
+        0.0f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
 
-        0.5f, -1.0f, 0.5f,     0.5f, 0.809f,  // 8
-        -0.5f, -1.0f, 0.5f,    0.191f, 0.5f,  // 9
-        -0.5f, -1.0f, -0.5f,   0.5f, 0.191f,  // 10
-        0.5f, -1.0f, -0.5f,    0.809f, 0.5f,  // 11
+        // Cube 
+        0.5f, -1.0f, 0.5f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -1.0f, 0.5f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -1.0f, -0.5f, 0.0f, 1.0f, 0.0f,
+        0.5f, -1.0f, -0.5f, 0.0f, 1.0f, 0.0f,
 
     };
 
@@ -123,29 +116,30 @@ void SimpleShapeApplication::init() {
 
     set_controler(new CameraControler(camera()));
 
-    // loading texture
-    stbi_set_flip_vertically_on_load(true);
-    GLint width, height, channels;
-    auto texture_file = std::string(ROOT_DIR) + "/Models/multicolor.png";
-    auto img = stbi_load(texture_file.c_str(), &width, &height, &channels, 0);
-    if (!img) {
-        spdlog::warn("Could not read image from file `{}'", texture_file);
-    }
+   // // loading texture
+   // stbi_set_flip_vertically_on_load(true);
+   // GLint width, height, channels;
+   // auto texture_file = std::string(ROOT_DIR) + "/Models/multicolor.png";
+   // auto img = stbi_load(texture_file.c_str(), &width, &height, &channels, 0);
+   // if (!img) {
+   //     spdlog::warn("Could not read image from file `{}'", texture_file);
+   // }
 
-    GLuint texture_handle;
-    glGenTextures(1, &texture_handle);
-    glBindTexture(GL_TEXTURE_2D, texture_handle);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, img);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glBindTexture(GL_TEXTURE_2D, 0);
+    //GLuint texture_handle;
+    //glGenTextures(1, &texture_handle);
+    //glBindTexture(GL_TEXTURE_2D, texture_handle);
+    //glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, img);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    //glBindTexture(GL_TEXTURE_2D, 0);
 
-    stbi_image_free(img);
+    //stbi_image_free(img);
 
-    auto house_material = new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 0.0f, 1.f)); 
+    auto house_material = new xe::ColorMaterial(glm::vec4(1.0f, 0.0f, 1.0f, 1.0f)); 
 
     xe::ColorMaterial::set_shader(program);
     xe::ColorMaterial::init();
+    house_material->set_texture(0);
     
     auto house = new xe::Mesh;
 
@@ -157,11 +151,11 @@ void SimpleShapeApplication::init() {
     house->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
     house->load_vertices(0, vertices_sizeof, vertices.data());
 
-    house->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
-    house->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
+    house->vertex_attrib_pointer(0, 3, GL_FLOAT, 6 * sizeof(vertices[0]), 0);
+    house->vertex_attrib_pointer(2, 3, GL_FLOAT, 6 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
 
     // Colours based on house from CameraMovement assignment, not Textures (pink > grey)
-    house->add_submesh(0, 48, house_material); 
+    house->add_submesh(0, indices.size(), house_material); 
 
     // Using texture
     // for (int i = 0; i < indices.size(); i += 3)
