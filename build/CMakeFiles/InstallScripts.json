@@ -14,7 +14,8 @@
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/cmake_install.cmake",
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/cmake_install.cmake",
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/cmake_install.cmake",
-		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/cmake_install.cmake"
+		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/cmake_install.cmake",
+		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

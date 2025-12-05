@@ -39,3 +39,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Colors/CMakeFiles/
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/CMakeFiles/Indices.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/CMakeFiles/Uniforms.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/CMakeFiles/ALL_BUILD.dir

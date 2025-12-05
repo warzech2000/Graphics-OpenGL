@@ -552,6 +552,15 @@ SPDLOG_WCHAR_SUPPORT:BOOL=OFF
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
 
 //Value Computed by CMake
+Uniforms_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms
+
+//Value Computed by CMake
+Uniforms_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Uniforms_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Uniforms
+
+//Value Computed by CMake
 XeEngine_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine
 
 //Value Computed by CMake
@@ -712,7 +721,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
