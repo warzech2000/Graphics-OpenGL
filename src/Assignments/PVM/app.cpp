@@ -7,7 +7,10 @@
 #include "Application/utils.h"
 
 #include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
 
 void SimpleShapeApplication::init() {
     // A utility function that reads the shader sources, compiles them and creates the program object
@@ -46,30 +49,25 @@ void SimpleShapeApplication::init() {
     glGenBuffers(1, &u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_DYNAMIC_DRAW);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
-    glGenBuffers(1, &u_transform_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, u_transform_buffer_);
-    glBufferData(GL_UNIFORM_BUFFER, 48, nullptr, GL_DYNAMIC_DRAW);
-    glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_transform_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-    // Link shader block to binding = 1
+       // Link shader block to binding = 1
     GLuint tindex = glGetUniformBlockIndex(program, "Transformations");
     glUniformBlockBinding(program, tindex, 1);
-    
-    glGenBuffers(1, &u_interface_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, u_interface_buffer_);
-    glBufferData(GL_UNIFORM_BUFFER, 8 * sizeof(float), nullptr, GL_DYNAMIC_DRAW);
-    // Bind this buffer to binding point 1:
-    glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_interface_buffer_);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
-    GLuint iface_index = glGetUniformBlockIndex(program, "Modifier");
-    if (iface_index != GL_INVALID_INDEX) {
-        glUniformBlockBinding(program, iface_index, 0);
-    }
+    
+    // glGenBuffers(1, &u_interface_buffer_);
+    // glBindBuffer(GL_UNIFORM_BUFFER, u_interface_buffer_);
+    // glBufferData(GL_UNIFORM_BUFFER, 16, nullptr, GL_DYNAMIC_DRAW);
+    // glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_interface_buffer_);
+    // glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+    // GLuint iface_index = glGetUniformBlockIndex(program, "Modifier");
+    // glUniformBlockBinding(program, iface_index, 0);
+
+    // float strength = 5.0f;
+    // glm::vec3 color = {1.0f, 1.0f, 1.0f};
 
     // vertex buffer
     GLuint v_buffer_handle;
@@ -83,46 +81,43 @@ void SimpleShapeApplication::init() {
     #pragma region Camera
 
     auto[w, h] = frame_buffer_size();
-    set_camera(new Camera);
+    // set_camera(new Camera);
 
-    camera()->look_at(
-        glm::vec3(0, 0, 1),
-        glm::vec3(0, 0, 0),
-        glm::vec3(0, 1, 0)
-    );
+    // camera()->look_at(
+    //     glm::vec3(0, 0, 1),
+    //     glm::vec3(0, 0, 0),
+    //     glm::vec3(0, 1, 0)
+    // );
 
-    camera()->perspective(glm::pi<float>()/2.0, (float)w/h, 0.1f, 100.f);
+    // camera()->perspective(glm::pi<float>()/2.0, (float)w/h, 0.1f, 100.f);
 
-    set_controler(new CameraControler(camera()));
+    // set_controler(new CameraControler(camera()));
 #pragma endregion
 
+    // VAO
+    glGenVertexArrays(1, &vao_);
+    glBindVertexArray(vao_);
 
         // VBO
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), vertices.data(), GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
 
     // EBO
     glGenBuffers(1, &ebo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLushort), indices.data(), GL_STATIC_DRAW);
 
-    // VAO
-    glGenVertexArrays(1, &vao_);
-    glBindVertexArray(vao_);
-
-    // Bind VBO to VAO and set attributes
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<void*>(0));
+
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<void*>(3 * sizeof(GLfloat)));
 
-    // Bind EBO while VAO is still bound
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 
     glBindVertexArray(0);
-
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
 
@@ -135,47 +130,24 @@ void SimpleShapeApplication::init() {
 //This functions is called every frame and does the actual rendering.
 
 void SimpleShapeApplication::frame() {
-    auto PVM = camera()->projection() * camera()->view();
+    //auto PVM = camera()->projection() * camera()->view();
+
+    auto[w, h] = frame_buffer_size();
+    glm::mat4 Model = glm::mat4(1.0f); // identity
+
+    glm::mat4 View = glm::lookAt(
+        glm::vec3(0.0f,0.0f,2.0f),
+        glm::vec3(0.0f,0.0f,0.0f),
+        glm::vec3(0.0f,1.0f,0.0f)
+    );
+
+    float aspect = float(w)/float(h);
+    glm::mat4 Projection = glm::perspective(glm::radians(45.0f), aspect, 0.1f, 100.0f);
+
+    glm::mat4 PVM = Projection * View * Model;
 
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0][0]);
-    glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-    float theta = glm::pi<float>() / 6.0f;
-    float cs = std::cos(theta);
-    float ss = std::sin(theta);
-
-    glm::mat2 rot{cs, ss, -ss, cs};
-    glm::vec2 trans{0.0, -0.25};
-    glm::vec2 scale{0.5, 0.5};
-
-    float data[12];
-
-    // scale
-    data[0] = scale.x;
-    data[1] = scale.y;
-
-    // translation
-    data[2] = trans.x;
-    data[3] = trans.y;
-
-    // rotation column 0 (vec2)
-    data[4] = rot[0].x;
-    data[5] = rot[0].y;
-
-    // padding
-    data[6] = 0.0f;
-    data[7] = 0.0f;
-
-    // rotation column 1 (vec2)
-    data[8]  = rot[1].x;
-    data[9]  = rot[1].y;
-
-    data[10] = 0.0f;
-    data[11] = 0.0f;
-
-    glBindBuffer(GL_UNIFORM_BUFFER, u_transform_buffer_);
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(data), data);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(PVM));
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
