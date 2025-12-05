@@ -92,6 +92,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/PVM/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
