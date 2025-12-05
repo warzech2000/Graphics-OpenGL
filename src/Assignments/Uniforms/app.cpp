@@ -49,12 +49,6 @@ void SimpleShapeApplication::init() {
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
-    // // Bind shader block to binding point 0
-    // GLuint block_index = glGetUniformBlockIndex(program, "Transformations");
-    // if (block_index != GL_INVALID_INDEX) {
-    //     glUniformBlockBinding(program, block_index, 0);
-    // }
-
     glGenBuffers(1, &u_transform_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, u_transform_buffer_);
     glBufferData(GL_UNIFORM_BUFFER, 48, nullptr, GL_DYNAMIC_DRAW);
