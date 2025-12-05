@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACA007B6-3B55-3BA7-9EE7-12667DE336AD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>xe-engine</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xe-engine.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">xe-engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xe-engine.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">xe-engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xe-engine.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">xe-engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xe-engine.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">xe-engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="XeEngine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"XeEngine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="XeEngine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"XeEngine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="XeEngine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"XeEngine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="XeEngine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"XeEngine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Camera.h" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Material.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\ColorMaterial.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\ColorMaterial.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Scene.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Scene.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Mesh.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Mesh.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\mesh_loader.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\mesh_loader.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Node.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\Node.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\PhongMaterial.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\PhongMaterial.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\stb_image.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\lights.h" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\utils.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\XeEngine\utils.cpp" />
+    <Object Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.dir\$(Configuration)\gl.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\ZERO_CHECK.vcxproj">
+      <Project>{2BCDAF24-F365-33AC-B70F-CEAAB81EE0A1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.vcxproj">
+      <Project>{E50F2789-8D2D-36A2-8174-86C33A04F874}</Project>
+      <Name>glad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{B104EE37-B2F8-3DC0-8FF9-02A0BAFD161D}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
+      <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
+      <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\ObjectReader\objreader.vcxproj">
+      <Project>{0320C9FF-324C-3B41-9D89-CD985C9437E8}</Project>
+      <Name>objreader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-build\spdlog.vcxproj">
+      <Project>{23DF7309-8CDE-382E-A1CF-4F3BE60B2A14}</Project>
+      <Name>spdlog</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+^D:\GRAFIKA 3D\BASE\3D 2\GRAPHICS-OPENGL\BUILD\_DEPS\GLFW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glfw-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

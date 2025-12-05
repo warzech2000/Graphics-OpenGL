@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\CMakeFiles\85678d1336e53b2fb9fd04ae107e515e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05B8F7D4-0D9B-332D-A6AF-C14A23444130}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

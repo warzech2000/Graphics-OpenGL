@@ -1,2 +1,0 @@
-C:/msys64/ucrt64/bin/ar.exe qc libxe-engine.a "CMakeFiles/xe-engine.dir/ColorMaterial.cpp.obj" "CMakeFiles/xe-engine.dir/Scene.cpp.obj" "CMakeFiles/xe-engine.dir/Mesh.cpp.obj" "CMakeFiles/xe-engine.dir/mesh_loader.cpp.obj" "CMakeFiles/xe-engine.dir/Node.cpp.obj" "CMakeFiles/xe-engine.dir/PhongMaterial.cpp.obj" "CMakeFiles/xe-engine.dir/stb_image.cpp.obj" "CMakeFiles/xe-engine.dir/utils.cpp.obj" ../../CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
-C:/msys64/ucrt64/bin/ranlib.exe libxe-engine.a

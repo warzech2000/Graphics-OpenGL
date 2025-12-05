@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\stb\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8A973ACD-F9C9-3423-99E2-4B57EE51E6EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE301D39-3F8D-3146-BB26-ADCF981DF1F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

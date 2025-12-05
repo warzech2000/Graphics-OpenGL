@@ -1,0 +1,10 @@
+^D:\GRAFIKA 3D\BASE\3D 2\GRAPHICS-OPENGL\BUILD\_DEPS\GLM-SUBBUILD\CMAKEFILES\489F92D58C8DCF0D56B066D2363CFAFB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glm-subbuild" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glm-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glm-subbuild/glm-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

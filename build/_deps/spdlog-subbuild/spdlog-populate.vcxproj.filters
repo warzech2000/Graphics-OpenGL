@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\989f6573d6a535dc895649b1d06084be\spdlog-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\564e306bfea83c43ae53f6944550eced\spdlog-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\d0d451e210973c47c1c4cf16d6f0b18e\spdlog-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\spdlog-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5C9405B6-90BB-3C7C-922A-EE1564A9DF74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,2 +1,0 @@
-C:/msys64/ucrt64/bin/ar.exe qc libengine.a CMakeFiles/engine.dir/Mesh.cpp.obj CMakeFiles/engine.dir/Material.cpp.obj ../../CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
-C:/msys64/ucrt64/bin/ranlib.exe libengine.a

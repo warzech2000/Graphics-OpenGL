@@ -18,7 +18,7 @@ file(MAKE_DIRECTORY
   "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp"
 )
 
-set(configSubDirs )
+set(configSubDirs Debug)
 foreach(subDir IN LISTS configSubDirs)
     file(MAKE_DIRECTORY "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/${subDir}")
 endforeach()

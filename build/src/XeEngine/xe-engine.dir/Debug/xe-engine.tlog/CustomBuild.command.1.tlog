@@ -1,0 +1,10 @@
+^D:\GRAFIKA 3D\BASE\3D 2\GRAPHICS-OPENGL\SRC\XEENGINE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

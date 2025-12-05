@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-subbuild\CMakeFiles\d0d451e210973c47c1c4cf16d6f0b18e\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5C9405B6-90BB-3C7C-922A-EE1564A9DF74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
