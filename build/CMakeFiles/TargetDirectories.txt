@@ -48,3 +48,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/PVM/CMakeFiles/ALL
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/Pyramid.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/Resizing.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/ALL_BUILD.dir

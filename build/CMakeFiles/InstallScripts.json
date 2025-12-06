@@ -17,7 +17,8 @@
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Indices/cmake_install.cmake",
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Uniforms/cmake_install.cmake",
 		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/PVM/cmake_install.cmake",
-		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/cmake_install.cmake"
+		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/cmake_install.cmake",
+		"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
