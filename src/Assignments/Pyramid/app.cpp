@@ -25,50 +25,56 @@ void SimpleShapeApplication::init() {
     }
     
     glEnable(GL_DEPTH_TEST);
-    //glEnable(GL_CULL_FACE); 
+    glEnable(GL_CULL_FACE);
+
 
     std::vector<GLushort> indices = {
-    0, 1, 2,
-    3, 4, 5,
+        // Base
+        0, 1, 2,
+        0, 2, 3,
 
-    6, 7, 8,
-    9, 10, 11,
-    12, 13, 14,
-    15, 16, 17
+        // Side
+        //1
+        4, 5, 6,
+
+        //2
+        7, 8, 9,
+
+        //3
+        10,11,12,
+
+        //4
+        13,14,15
     };
 
-    // A vector containing the x,y,z vertex coordinates + texture coords
     std::vector<GLfloat> vertices = {
 
-    // Base
-     0.5f, -0.5f,  0.5f,   1, 0, 1,
-    -0.5f, -0.5f,  0.5f,   1, 0, 1,
-    -0.5f, -0.5f, -0.5f,   1, 0, 1,
 
-     0.5f, -0.5f,  0.5f,   1, 0, 1,
-    -0.5f, -0.5f, -0.5f,   1, 0, 1,
-     0.5f, -0.5f, -0.5f,   1, 0, 1,
+    //BASE
+     0.5f, -0.5f,  0.5f,  1,1,1,
+    -0.5f, -0.5f,  0.5f,  1,1,1,
+    -0.5f, -0.5f, -0.5f,  1,1,1,
+     0.5f, -0.5f, -0.5f,  1,1,1,
 
+    //1
+     0.5f, -0.5f,  0.5f,  1,0,0, 
+     0.0f,  0.5f,  0.0f,  1,0,0,
+    -0.5f, -0.5f,  0.5f,  1,0,0,
+    //2
+    -0.5f, -0.5f,  0.5f,  0,1,0,
+     0.0f,  0.5f,  0.0f,  0,1,0,
+    -0.5f, -0.5f, -0.5f, 0,1,0,
 
-    // Side
-    // 1
-     0.5f, -0.5f,  0.5f,   1, 0, 0,
-    -0.5f, -0.5f,  0.5f,   1, 0, 0,
-     0.0f,  0.5f,  0.0f,   1, 0, 0,
+    //3
+    -0.5f, -0.5f, -0.5f, 0,0,1,
+     0.0f,  0.5f,  0.0f, 0,0,1,
+     0.5f, -0.5f, -0.5f, 0,0,1,
 
-    // 2
-    -0.5f, -0.5f,  0.5f,   0, 1, 0,
-    -0.5f, -0.5f, -0.5f,   0, 1, 0,
-     0.0f,  0.5f,  0.0f,   0, 1, 0,
+    //4
+     0.5f, -0.5f, -0.5f, 1,1,0, 
+     0.0f,  0.5f,  0.0f, 1,1,0, 
+     0.5f, -0.5f,  0.5f, 1,1,0,
 
-    // 3
-    -0.5f, -0.5f, -0.5f,   0, 0, 1,
-     0.5f, -0.5f, -0.5f,   0, 0, 1,
-     0.0f,  0.5f,  0.0f,   0, 0, 1,
-    // 4
-     0.5f, -0.5f, -0.5f,   1, 1, 0,
-     0.5f, -0.5f,  0.5f,   1, 1, 0,
-     0.0f,  0.5f,  0.0f,   1, 1, 0,
 };
 
     // UBO
@@ -149,7 +155,7 @@ void SimpleShapeApplication::frame() {
 
     glm::mat4 Model = glm::mat4(1.0f); // identity 
     angle_ += 0.5f;
-    Model = glm::rotate(Model, glm::radians(angle_), glm::vec3(-0.5f, 1.0f, 0.0f));
+    Model = glm::rotate(Model, glm::radians(angle_), glm::vec3(0.5f, 1.0f, 0.0f));
 
     glm::mat4 View = glm::lookAt(
         glm::vec3(0.0f,0.0f,2.0f),
