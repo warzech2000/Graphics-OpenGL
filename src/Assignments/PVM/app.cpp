@@ -142,7 +142,7 @@ void SimpleShapeApplication::frame() {
     );
 
     float aspect = float(w)/float(h);
-    glm::mat4 Projection = glm::perspective(glm::radians(45.0f), aspect, 0.1f, 100.0f);
+    glm::mat4 Projection = glm::perspective(glm::radians(25.0f), aspect, 0.1f, 100.0f);
 
     glm::mat4 PVM = Projection * View * Model;
 
@@ -153,7 +153,7 @@ void SimpleShapeApplication::frame() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glBindVertexArray(vao_);
-    glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_SHORT, 0);
+    glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, 0);
     glBindVertexArray(0);
 }
 

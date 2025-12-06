@@ -456,6 +456,15 @@ PVM_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 PVM_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/PVM
 
+//Value Computed by CMake
+Pyramid_BINARY_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid
+
+//Value Computed by CMake
+Pyramid_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Pyramid_SOURCE_DIR:STATIC=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid
+
 //Build all artifacts
 SPDLOG_BUILD_ALL:BOOL=OFF
 
@@ -730,7 +739,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

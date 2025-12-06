@@ -194,6 +194,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{05944808-4AC7-3209-BC5F-5327056FE0C2}</Project>
       <Name>PVM</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\Pyramid.vcxproj">
+      <Project>{1393EF48-1463-35AE-A525-EC99613F6252}</Project>
+      <Name>Pyramid</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Uniforms\Uniforms.vcxproj">
       <Project>{567ECCB1-8F37-3AD1-B9E6-7ECBE18704AD}</Project>
       <Name>Uniforms</Name>
