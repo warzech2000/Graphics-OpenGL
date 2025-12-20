@@ -114,38 +114,9 @@ void SimpleShapeApplication::init() {
     int w, h;
     std::tie(w, h) = frame_buffer_size();
     camera()->perspective(glm::pi<float>()/2.0, (float)w/h, 0.1f, 100.f);
-
-    set_controler(new CameraControler(camera()));
-
-    // set_camera(new Camera);
-
-    // camera()->look_at(
-    //     glm::vec3(0, 1, 1),
-    //     glm::vec3(0, 0, 0),
-    //     glm::vec3(0, 1, 0)
-    // );
-
-    // UpdateCameraData();
-
-    // camera()->perspective(glm::pi<float>()/2.0, (float)w/h, 0.1f, 100.f);
-
-    // set_controler(new CameraControler(camera()));
-    // auto[w, h] = frame_buffer_size();
+    
 
 
-
-
-    // set_camera(new Camera);
-
-    // camera()->look_at(
-    //     glm::vec3(0, 0, 1),
-    //     glm::vec3(0, 0, 0),
-    //     glm::vec3(0, 1, 0)
-    // );
-
-    // camera()->perspective(glm::pi<float>()/2.0, (float)w/h, 0.1f, 100.f);
-
-    // set_controler(new CameraControler(camera()));
 #pragma endregion
 
     // VAO
@@ -168,6 +139,8 @@ void SimpleShapeApplication::init() {
 
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<void*>(3 * sizeof(GLfloat)));
+
+    set_controler(new CameraControler(camera()));
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
 
@@ -213,20 +186,7 @@ void SimpleShapeApplication::UpdateCameraData() {
 
 
 void SimpleShapeApplication::mouse_button_callback(int button, int action, int mods) {
-    Application::mouse_button_callback(button, action, mods);
-
-    // if (controler_) {
-    //     double x, y;
-    //     glfwGetCursorPos(window_, &x, &y);
-
-    //     if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
-    //         controler_->LMB_pressed(x, y);
-
-    //     if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
-    //         controler_->LMB_released(x, y);
-    // }
-
-}
+    Application::mouse_button_callback(button, action, mods);}
 
 void SimpleShapeApplication::cursor_position_callback(double x, double y) {
     Application::cursor_position_callback(x, y);

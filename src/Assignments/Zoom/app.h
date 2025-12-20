@@ -29,12 +29,6 @@ public:
          camera()->zoom(yoffset / 30.0f);
     }
 
-    virtual void cursor_position_callback(double x, double y) override;
-
-    virtual void mouse_button_callback(int button, int action, int mods) override;
-
-    void set_controler(CameraControler *controler) { controler_ = controler; }
-
     void set_camera(Camera *camera) { camera_ = camera; }
 
     void UpdateCameraData();
@@ -45,6 +39,7 @@ public:
         meshes_.push_back(mesh);
     }
 
+    
     ~SimpleShapeApplication() {
         if (camera_) {
             delete camera_;
@@ -60,6 +55,8 @@ public:
             meshes_.clear();
         }
     }
+
+
 
 private:
     GLuint vao_;
@@ -77,5 +74,12 @@ private:
 
     float angle_ = 0.0f;
     int w,h = 400.f;
+
+public:
+    virtual void cursor_position_callback(double x, double y) override;
+
+    virtual void mouse_button_callback(int button, int action, int mods) override;
+
+    void set_controler(CameraControler *controler) { controler_ = controler; }
 
 };

@@ -12,9 +12,6 @@ public:
     glm::vec3 x() const { return x_; }
     glm::vec3 y() const { return y_; }
     glm::vec3 z() const { return z_; }
-    glm::vec3 position() const { return position_; }
-    glm::vec3 center() const { return center_; }
-
     
     void look_at(const glm::vec3 &eye, const glm::vec3 &center, const glm::vec3 &up) {
         V_ = glm::lookAt(eye, center, up);
@@ -43,42 +40,10 @@ public:
     }
 
     glm::mat4 projection() const { return glm::perspective(fov_, aspect_, near_, far_); }
-
-    void rotate_around_point(float angle, const glm::vec3 &axis, const glm::vec3 &c) {
-        auto R = rotation(angle, axis);
-        x_ = R * x_;
-        y_ = R * y_;
-        z_ = R * z_;
-
-        auto t = position_ - c;
-        t = R * t;
-        position_ = c + t;
-    }
-
-    glm::mat3 rotation(float angle, const glm::vec3 &axis) {
-            auto u = glm::normalize(axis);
-            auto s = std::sin(angle);
-            auto c = std::cos(angle);
-
-            return glm::mat3(
-                c + u.x * u.x * (1.0f - c),
-                u.y * u.x * (1.0f - c) + u.z * s,
-                u.z * u.x * (1.0f - c) - u.y * s,
-
-                u.x *u.y*(1.0f-c)-u.z *s,
-                c + u.y*u.y *(1.0f-c),
-                u.z*u.y*(1.0f-c)+u.x*s,
-
-                u.x*u.z*(1.0f -c)+ u.y*s,
-                u.y*u.z*(1.0f-c)-u.x*s,
-                c+u.z*u.z*(1.0f -c)
-            );
-        }
-
-    void rotate_around_center(float angle, const glm::vec3 &axis) {
-            rotate_around_point(angle, axis, center_); 
-        }
     
+    glm::vec3 position() const { return position_; }
+    glm::vec3 center() const { return center_; }
+
     private:
         float fov_;
         float aspect_;

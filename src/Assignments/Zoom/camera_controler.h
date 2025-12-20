@@ -7,8 +7,8 @@ class CameraControler {
         void set_camera(Camera *camera) { camera_ = camera; }
 
         void rotate_camera(float dx, float dy) {
-            camera_->rotate_around_center(-scale_ * dy, camera_->x());
-            camera_->rotate_around_center(-scale_ * dx, camera_->y());
+            // camera_->rotate_around_center(-scale_ * dy, camera_->x());
+            // camera_->rotate_around_center(-scale_ * dx, camera_->y());
         }
 
         void mouse_moved(float x, float y) {
