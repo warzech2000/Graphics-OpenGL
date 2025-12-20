@@ -206,6 +206,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{567ECCB1-8F37-3AD1-B9E6-7ECBE18704AD}</Project>
       <Name>Uniforms</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Zoom\Zoom.vcxproj">
+      <Project>{EC14AD9E-0A23-3DFE-A552-4821A35DB897}</Project>
+      <Name>Zoom</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Application\application.vcxproj">
       <Project>{219F79B1-6D5A-3421-B84C-039C6BF44663}</Project>
       <Name>application</Name>

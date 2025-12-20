@@ -51,3 +51,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/Resizing.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Resizing/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Zoom/CMakeFiles/Zoom.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Zoom/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Zoom/CMakeFiles/ALL_BUILD.dir
