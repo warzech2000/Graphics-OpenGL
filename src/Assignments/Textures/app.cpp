@@ -18,13 +18,9 @@
 void SimpleShapeApplication::init() {
     std::cout << "SimpleShapeApplication::init() started" << std::endl;
     
-    // A utility function that reads the shader sources, compiles them and creates the program object
-    // As everything in OpenGL we reference program by an integer "handle".
-    std::cout << "Creating shader program..." << std::endl;
     auto vs_path = std::string(PROJECT_DIR) + "/shaders/base_vs.glsl";
     auto fs_path = std::string(PROJECT_DIR) + "/shaders/base_fs.glsl";
-    std::cout << "Vertex shader: " << vs_path << std::endl;
-    std::cout << "Fragment shader: " << fs_path << std::endl;
+
     
     auto program = xe::utils::create_program(
             {{GL_VERTEX_SHADER,   vs_path},
@@ -34,16 +30,11 @@ void SimpleShapeApplication::init() {
         std::cerr << "ERROR: Failed to create shader program!" << std::endl;
         throw std::runtime_error("Failed to create shader program");
     }
-    std::cout << "Shader program created successfully: " << program << std::endl;
-    
-    std::cout << "Initializing ColorMaterial..." << std::endl;
+
     xe::ColorMaterial::init();
-    std::cout << "Setting shader..." << std::endl;
     xe::ColorMaterial::set_shader(program);
-    std::cout << "Initializing uniform locations..." << std::endl;
     xe::ColorMaterial::init_uniform_locations();
-    std::cout << "ColorMaterial initialized" << std::endl;
-    
+
     // Link Transformations uniform block to binding = 1 for ColorMaterial shader
     GLuint color_program = xe::ColorMaterial::program();
     GLuint tindex_color = glGetUniformBlockIndex(color_program, "Transformations");
@@ -60,61 +51,34 @@ void SimpleShapeApplication::init() {
         0, 2, 3,
 
         // Side
-        //1
         4, 5, 6,
-
-        //2
         7, 8, 9,
-
-        //3
         10,11,12,
-
-        //4
         13,14,15
     };
 
     std::vector<GLfloat> vertices = {
-    // Position (x, y, z) + Texture coordinates (u, v)
-    // BASE - maps to central diamond shape (rotated square)
-    // Using exact UV coordinates from UV map: (0.1910, 0.5), (0.5, 0.8090), (0.8090, 0.5), (0.5, 0.1910)
-    // Vertex order: 0=front-right, 1=front-left, 2=back-left, 3=back-right
-    // Indices: Triangle 1: 0,1,2 (front-right, front-left, back-left)
-    //         Triangle 2: 0,2,3 (front-right, back-left, back-right)
-    // Mapping vertices to diamond: need to match spatial arrangement
-    // Looking at base from above: front-right(top-right), front-left(top-left), back-left(bottom-left), back-right(bottom-right)
-    // Diamond points: right(0.8090,0.5), left(0.1910,0.5), top(0.5,0.8090), bottom(0.5,0.1910)
-     0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,   // vertex 0 (front-right) -> top of diamond (0.5, 0.8090)
-    -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,   // vertex 1 (front-left) -> left of diamond (0.1910, 0.5)
-    -0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,   // vertex 2 (back-left) -> bottom of diamond (0.5, 0.1910)
-     0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,   // vertex 3 (back-right) -> right of diamond (0.8090, 0.5)
-
-    // SIDE 1 - maps to top-left red triangle
-    // Using exact UV coordinates: (0, 1), (0.1910, 0.5), (0.5, 0.8090)
-     0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,   // bottom-right vertex -> top midpoint (0.5, 0.8090)
-     0.0f,  0.5f,  0.0f,  0.0f, 1.0f,      // apex -> top-left corner (0, 1)
-    -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,   // bottom-left vertex -> left midpoint (0.1910, 0.5)
-
-    // SIDE 2 - maps to top-right blue triangle
-    // Using exact UV coordinates: (1, 1), (0.5, 0.8090), (0.8090, 0.5)
-    -0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,   // bottom-left vertex -> top midpoint (0.5, 0.8090)
-     0.0f,  0.5f,  0.0f,  1.0f, 1.0f,      // apex -> top-right corner (1, 1)
-    -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,   // bottom-right vertex -> right midpoint (0.8090, 0.5)
-
-    // SIDE 3 - maps to bottom-right orange triangle
-    // Using exact UV coordinates: (1, 0), (0.8090, 0.5), (0.5, 0.1910)
-    -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,   // bottom-left vertex -> right midpoint (0.8090, 0.5)
-     0.0f,  0.5f,  0.0f,  1.0f, 0.0f,      // apex -> bottom-right corner (1, 0)
-     0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,   // bottom-right vertex -> bottom midpoint (0.5, 0.1910)
-
-    // SIDE 4 - maps to bottom-left green triangle
-    // Using exact UV coordinates: (0, 0), (0.5, 0.1910), (0.1910, 0.5)
-     0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,   // bottom-right vertex -> bottom midpoint (0.5, 0.1910)
-     0.0f,  0.5f,  0.0f,  0.0f, 0.0f,      // apex -> bottom-left corner (0, 0)
-     0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,   // bottom-left vertex -> left midpoint (0.1910, 0.5)
-
-};
-
-    
+        0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
+       -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
+       -0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
+        0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
+   
+        0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
+        0.0f,  0.5f,  0.0f,  0.0f, 1.0f,
+       -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
+   
+       -0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
+        0.0f,  0.5f,  0.0f,  1.0f, 1.0f,
+       -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
+   
+       -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
+        0.0f,  0.5f,  0.0f,  1.0f, 0.0f,
+        0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
+   
+        0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
+        0.0f,  0.5f,  0.0f,  0.0f, 0.0f,
+        0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
+   };
 
     // UBO
     glGenBuffers(1, &u_pvm_buffer_);
@@ -126,7 +90,6 @@ void SimpleShapeApplication::init() {
     // Link shader block to binding = 1
     GLuint tindex = glGetUniformBlockIndex(program, "Transformations");
     glUniformBlockBinding(program, tindex, 1);
-
 
     #pragma region Camera
 
@@ -159,11 +122,9 @@ void SimpleShapeApplication::init() {
     pyramid->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(vertices[0]));
 
     // Load texture
-    std::cout << "Loading texture..." << std::endl;
     stbi_set_flip_vertically_on_load(true);
     GLint width, height, channels;
     auto texture_file = std::string(ROOT_DIR) + "/Models/multicolor.png";
-    std::cout << "Texture file path: " << texture_file << std::endl;
     auto img = stbi_load(texture_file.c_str(), &width, &height, &channels, 0);
     if (!img) {
         std::cerr << "WARNING: Could not read image from file: " << texture_file << std::endl;
@@ -193,13 +154,6 @@ void SimpleShapeApplication::init() {
         glBindTexture(GL_TEXTURE_2D, 0);
     }
 
-    // Multiple submeshes - each face uses the same texture but different UV coordinates
-    // Base (indices 0-6): central grey square
-    // Side 1 (indices 6-9): top-left red triangle
-    // Side 2 (indices 9-12): top-right blue triangle
-    // Side 3 (indices 12-15): bottom-right orange triangle
-    // Side 4 (indices 15-18): bottom-left green triangle
-    std::cout << "Creating ColorMaterial with texture: " << texture << std::endl;
     pyramid->add_submesh(0, 6, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0));  // base
     pyramid->add_submesh(6, 9, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0));  // side 1 (red)
     pyramid->add_submesh(9, 12, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0)); // side 2 (blue)
@@ -208,11 +162,10 @@ void SimpleShapeApplication::init() {
 
     add_submesh(pyramid);
 
-    std::cout << "Setting clear color and viewport..." << std::endl;
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
 
     glViewport(0, 0, w, h);
-    std::cout << "SimpleShapeApplication::init() completed successfully" << std::endl;
+
 }
 
 void SimpleShapeApplication::frame() {
