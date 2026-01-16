@@ -25,7 +25,15 @@ namespace xe {
 
         void set_texture(GLuint tex) { texture_ = tex; }
 
+        GLuint get_texture() const { return texture_; }
+
+        void set_texture_unit(GLuint unit) { texture_unit_ = unit; }
+
+        GLuint get_texture_unit() const { return texture_unit_; }
+
         static void set_shader(GLuint program) { shader_ = program; }
+
+        static void init_uniform_locations();
 
         void bind() override;
 

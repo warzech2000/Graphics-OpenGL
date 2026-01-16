@@ -46,11 +46,11 @@ namespace xe {
                 {{GL_VERTEX_SHADER,   std::string(PROJECT_DIR) + "/shaders/color_vs.glsl"},
                  {GL_FRAGMENT_SHADER, std::string(PROJECT_DIR) + "/shaders/color_fs.glsl"}});
         if (!program) {
-            std::cerr << "Invalid program" << std::endl;
-            exit(-1);
+            spdlog::warn("ColorMaterial::init() - Could not create default shader program. Shader will need to be set manually.");
+            shader_ = 0;
+        } else {
+            shader_ = program;
         }
-
-        shader_ = program;
 
         glGenBuffers(1, &color_uniform_buffer_);
 
@@ -76,11 +76,22 @@ namespace xe {
 #endif
 
 
+        // Only initialize uniform locations if we have a valid shader
+        if (shader_ != 0) {
+            init_uniform_locations();
+        }
+
+    }
+
+    void ColorMaterial::init_uniform_locations() {
+        if (shader_ == 0) {
+            spdlog::warn("Cannot initialize uniform locations: shader is not set");
+            return;
+        }
         uniform_map_Kd_location_ = glGetUniformLocation(shader_, "map_Kd");
         if (uniform_map_Kd_location_ == -1) {
             spdlog::warn("Cannot get uniform {} location", "map_Kd");
         }
-
     }
 
 

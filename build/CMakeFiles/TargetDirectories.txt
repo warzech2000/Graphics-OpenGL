@@ -60,3 +60,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/CameraMovement/CMa
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/Textures.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/ALL_BUILD.dir
