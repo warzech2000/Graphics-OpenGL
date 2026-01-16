@@ -5,13 +5,21 @@
 #include <iostream>
 
 #include "Mesh.h"
+#include "Material.h"
 
 void xe::Mesh::draw() const {
     glBindVertexArray(vao_);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, i_buffer_);
     for (auto i = 0; i < submeshes_.size(); i++) {
+        auto mtl = materials_[i];
+        if (mtl != nullptr) {
+            mtl->bind();
+        }
         glDrawElements(GL_TRIANGLES, submeshes_[i].count(), GL_UNSIGNED_SHORT,
                        reinterpret_cast<void *>(sizeof(GLushort) * submeshes_[i].start));
+        if (mtl != nullptr) {
+            mtl->unbind();
+        }
     }
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0u);
     glBindVertexArray(0u);
@@ -62,4 +70,9 @@ load_vertices(size_t offset, size_t size, void *data) {
     glBindBuffer(GL_ARRAY_BUFFER, v_buffer_);
     glBufferSubData(GL_ARRAY_BUFFER, offset, size, data);
     glBindBuffer(GL_ARRAY_BUFFER, 0u);
+}
+
+void xe::Mesh::add_submesh(GLuint start, GLuint end, Material* mat) {
+    submeshes_.push_back({start, end});
+    materials_.push_back(mat);
 }

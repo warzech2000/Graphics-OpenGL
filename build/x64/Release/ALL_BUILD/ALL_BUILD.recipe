@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\CameraMovement\Release\CameraMovement.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Colors\Release\Colors.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\House\Release\House.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Indices\Release\Indices.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\MeshesMaterials\Release\MeshesMaterials.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\PVM\Release\PVM.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\Release\Pyramid.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Resizing\Release\Resizing.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Triangle\Release\Triangle.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Uniforms\Release\Uniforms.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Zoom\Release\Zoom.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

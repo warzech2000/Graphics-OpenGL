@@ -23,6 +23,15 @@ void SimpleShapeApplication::init() {
         exit(-1);
     }
     
+    xe::ColorMaterial::init();
+    
+    // Link Transformations uniform block to binding = 1 for ColorMaterial shader
+    GLuint color_program = xe::ColorMaterial::program();
+    GLuint tindex_color = glGetUniformBlockIndex(color_program, "Transformations");
+    if (tindex_color != GL_INVALID_INDEX) {
+        glUniformBlockBinding(color_program, tindex_color, 1);
+    }
+    
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
 
@@ -49,29 +58,29 @@ void SimpleShapeApplication::init() {
 
 
     //BASE
-     0.5f, -0.5f,  0.5f,  1,1,1,
-    -0.5f, -0.5f,  0.5f,  1,1,1,
-    -0.5f, -0.5f, -0.5f,  1,1,1,
-     0.5f, -0.5f, -0.5f,  1,1,1,
+     0.5f, -0.5f,  0.5f,
+    -0.5f, -0.5f,  0.5f,
+    -0.5f, -0.5f, -0.5f,
+     0.5f, -0.5f, -0.5f,
 
     //1
-     0.5f, -0.5f,  0.5f,  1,0,0, 
-     0.0f,  0.5f,  0.0f,  1,0,0,
-    -0.5f, -0.5f,  0.5f,  1,0,0,
+     0.5f, -0.5f,  0.5f, 
+     0.0f,  0.5f,  0.0f,
+    -0.5f, -0.5f,  0.5f,
     //2
-    -0.5f, -0.5f,  0.5f,  0,1,0,
-     0.0f,  0.5f,  0.0f,  0,1,0,
-    -0.5f, -0.5f, -0.5f, 0,1,0,
+    -0.5f, -0.5f,  0.5f,
+     0.0f,  0.5f,  0.0f,
+    -0.5f, -0.5f, -0.5f,
 
     //3
-    -0.5f, -0.5f, -0.5f, 0,0,1,
-     0.0f,  0.5f,  0.0f, 0,0,1,
-     0.5f, -0.5f, -0.5f, 0,0,1,
+    -0.5f, -0.5f, -0.5f,
+     0.0f,  0.5f,  0.0f,
+     0.5f, -0.5f, -0.5f,
 
     //4
-     0.5f, -0.5f, -0.5f, 1,1,0, 
-     0.0f,  0.5f,  0.0f, 1,1,0, 
-     0.5f, -0.5f,  0.5f, 1,1,0,
+     0.5f, -0.5f, -0.5f, 
+     0.0f,  0.5f,  0.0f, 
+     0.5f, -0.5f,  0.5f,
 
 };
 
@@ -87,17 +96,6 @@ void SimpleShapeApplication::init() {
     // Link shader block to binding = 1
     GLuint tindex = glGetUniformBlockIndex(program, "Transformations");
     glUniformBlockBinding(program, tindex, 1);
-
-    // vertex buffer
-    GLuint v_buffer_handle;
-    glGenBuffers(1, &v_buffer_handle);
-    glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle);
-    //OGL_CALL(glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle));
-    glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * vertices.size(), vertices.data(), GL_STATIC_DRAW);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-
-    
 
 
     #pragma region Camera
@@ -117,35 +115,6 @@ void SimpleShapeApplication::init() {
     set_controler(new CameraControler(camera()));
 #pragma endregion
 
-    // VAO
-    glGenVertexArrays(1, &vao_);
-    glBindVertexArray(vao_);
-
-        // VBO
-    glGenBuffers(1, &vbo);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
-
-    // EBO
-    glGenBuffers(1, &ebo);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLushort), indices.data(), GL_STATIC_DRAW);
-
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<void*>(0));
-
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<void*>(3 * sizeof(GLfloat)));
-
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-
-    glBindVertexArray(0);
-
-
-    // xe::ColorMaterial::set_shader(program);
-    // xe::ColorMaterial::init();
-
     auto pyramid = new xe::Mesh;
 
     size_t indices_sizeof = sizeof(indices[0]) * indices.size();
@@ -156,10 +125,8 @@ void SimpleShapeApplication::init() {
     pyramid->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
     pyramid->load_vertices(0, vertices_sizeof, vertices.data());
 
-    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
-    pyramid->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(GLfloat));
+    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 3 * sizeof(vertices[0]), 0);
 
-    // Colours based on pyramid from CameraMovement assignment, not Textures (pink > grey)
     pyramid->add_submesh(0, 6, new xe::ColorMaterial(glm::vec4(glm::vec3(1.f, 0.f, 1.f), 1.f)));  // base == 2 triangles == 6 vertices
     pyramid->add_submesh(6, 9, new xe::ColorMaterial(glm::vec4(glm::vec3(1.f, 0.f, 0.f), 1.f)));  // side == 1 triangle == 3 vertices
     pyramid->add_submesh(9, 12, new xe::ColorMaterial(glm::vec4(glm::vec3(0.f, 1.f, 0.f), 1.f)));
@@ -172,8 +139,6 @@ void SimpleShapeApplication::init() {
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
 
     glViewport(0, 0, w, h);
-
-    glUseProgram(program);
 }
 
 void SimpleShapeApplication::frame() {
@@ -188,18 +153,6 @@ void SimpleShapeApplication::frame() {
     for (auto m: meshes_)
         m->draw();
 
-    // auto PVM = camera()->projection() * camera()->view();
-
-    // glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
-    // glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(PVM));
-    // // glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
-    // glBindBuffer(GL_UNIFORM_BUFFER, 0);
-
-    // glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    // glBindVertexArray(vao_);
-    // glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, 0);
-    // glBindVertexArray(0);
 }
 
 void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {

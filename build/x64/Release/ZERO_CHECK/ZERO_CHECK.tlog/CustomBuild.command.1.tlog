@@ -1,0 +1,10 @@
+^D:\GRAFIKA 3D\BASE\3D 2\GRAPHICS-OPENGL\BUILD\CMAKEFILES\337C281A1724D6287C38A74CD9660138\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/Graphics3DCode.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
