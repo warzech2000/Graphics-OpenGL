@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1393EF48-1463-35AE-A525-EC99613F6252}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Pyramid</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pyramid.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pyramid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pyramid.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pyramid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Pyramid.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Pyramid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Pyramid.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Pyramid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Pyramid";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Pyramid\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;..\..\..\_deps\glfw-build\src\Debug\glfw3.lib;..\..\..\_deps\glm-build\glm\Debug\glm.lib;..\..\Application\Debug\application.lib;..\..\..\_deps\spdlog-build\Debug\spdlogd.lib;..\..\XeEngine\Debug\xe-engine.lib;..\..\ObjectReader\Debug\objreader.lib;opengl32.lib;..\..\..\_deps\glfw-build\src\Debug\glfw3.lib;..\..\..\_deps\glm-build\glm\Debug\glm.lib;..\..\..\_deps\spdlog-build\Debug\spdlogd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/Debug/Pyramid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/Debug/Pyramid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Pyramid";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Pyramid\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;..\..\..\_deps\glfw-build\src\Release\glfw3.lib;..\..\..\_deps\glm-build\glm\Release\glm.lib;..\..\Application\Release\application.lib;..\..\..\_deps\spdlog-build\Release\spdlog.lib;..\..\XeEngine\Release\xe-engine.lib;..\..\ObjectReader\Release\objreader.lib;opengl32.lib;..\..\..\_deps\glfw-build\src\Release\glfw3.lib;..\..\..\_deps\glm-build\glm\Release\glm.lib;..\..\..\_deps\spdlog-build\Release\spdlog.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/Release/Pyramid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/Release/Pyramid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Pyramid";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Pyramid\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;..\..\..\_deps\glfw-build\src\MinSizeRel\glfw3.lib;..\..\..\_deps\glm-build\glm\MinSizeRel\glm.lib;..\..\Application\MinSizeRel\application.lib;..\..\..\_deps\spdlog-build\MinSizeRel\spdlog.lib;..\..\XeEngine\MinSizeRel\xe-engine.lib;..\..\ObjectReader\MinSizeRel\objreader.lib;opengl32.lib;..\..\..\_deps\glfw-build\src\MinSizeRel\glfw3.lib;..\..\..\_deps\glm-build\glm\MinSizeRel\glm.lib;..\..\..\_deps\spdlog-build\MinSizeRel\spdlog.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/MinSizeRel/Pyramid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/MinSizeRel/Pyramid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Pyramid";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Pyramid\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;..\..\..\_deps\glfw-build\src\RelWithDebInfo\glfw3.lib;..\..\..\_deps\glm-build\glm\RelWithDebInfo\glm.lib;..\..\Application\RelWithDebInfo\application.lib;..\..\..\_deps\spdlog-build\RelWithDebInfo\spdlog.lib;..\..\XeEngine\RelWithDebInfo\xe-engine.lib;..\..\ObjectReader\RelWithDebInfo\objreader.lib;opengl32.lib;..\..\..\_deps\glfw-build\src\RelWithDebInfo\glfw3.lib;..\..\..\_deps\glm-build\glm\RelWithDebInfo\glm.lib;..\..\..\_deps\spdlog-build\RelWithDebInfo\spdlog.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/RelWithDebInfo/Pyramid.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/RelWithDebInfo/Pyramid.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Pyramid\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Pyramid/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Grafika 3D/Base/3d 2/Graphics-OpenGL" "-BD:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build" --check-stamp-file "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Pyramid/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Pyramid\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Pyramid\main.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Pyramid\app.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Pyramid\app.cpp" />
+    <Object Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.dir\$(Configuration)\gl.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\ZERO_CHECK.vcxproj">
+      <Project>{2BCDAF24-F365-33AC-B70F-CEAAB81EE0A1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Application\application.vcxproj">
+      <Project>{219F79B1-6D5A-3421-B84C-039C6BF44663}</Project>
+      <Name>application</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.vcxproj">
+      <Project>{E50F2789-8D2D-36A2-8174-86C33A04F874}</Project>
+      <Name>glad</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{B104EE37-B2F8-3DC0-8FF9-02A0BAFD161D}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
+      <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
+      <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\ObjectReader\objreader.vcxproj">
+      <Project>{0320C9FF-324C-3B41-9D89-CD985C9437E8}</Project>
+      <Name>objreader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-build\spdlog.vcxproj">
+      <Project>{23DF7309-8CDE-382E-A1CF-4F3BE60B2A14}</Project>
+      <Name>spdlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\XeEngine\xe-engine.vcxproj">
+      <Project>{ACA007B6-3B55-3BA7-9EE7-12667DE336AD}</Project>
+      <Name>xe-engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Uniforms\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Uniforms\app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Uniforms\app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Assignments\Uniforms\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.dir\$(Configuration)\gl.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8A973ACD-F9C9-3423-99E2-4B57EE51E6EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{B3001BFF-3D88-32C7-A0BF-6F2E2AF26F73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FE301D39-3F8D-3146-BB26-ADCF981DF1F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
