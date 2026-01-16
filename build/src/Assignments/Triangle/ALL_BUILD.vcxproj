@@ -174,9 +174,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Triangle\MeshesMaterials.vcxproj">
-      <Project>{43261574-58DB-3941-8368-99CE40E7C808}</Project>
-      <Name>MeshesMaterials</Name>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Triangle\Triangle.vcxproj">
+      <Project>{CA8AB7B4-11DE-3B9D-9C47-D9CF5FF96116}</Project>
+      <Name>Triangle</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

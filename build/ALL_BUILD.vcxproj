@@ -190,7 +190,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{F488028E-5FFF-343D-9408-4132ECD5B322}</Project>
       <Name>Indices</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Triangle\MeshesMaterials.vcxproj">
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\MeshesMaterials\MeshesMaterials.vcxproj">
       <Project>{43261574-58DB-3941-8368-99CE40E7C808}</Project>
       <Name>MeshesMaterials</Name>
     </ProjectReference>
@@ -205,6 +205,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Resizing\Resizing.vcxproj">
       <Project>{0E021E8F-BA74-34CB-81B9-FA1E801B9C21}</Project>
       <Name>Resizing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Triangle\Triangle.vcxproj">
+      <Project>{CA8AB7B4-11DE-3B9D-9C47-D9CF5FF96116}</Project>
+      <Name>Triangle</Name>
     </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\Uniforms\Uniforms.vcxproj">
       <Project>{567ECCB1-8F37-3AD1-B9E6-7ECBE18704AD}</Project>

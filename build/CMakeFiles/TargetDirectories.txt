@@ -27,7 +27,7 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/ALL_BUILD.
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/engine.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/ALL_BUILD.dir
-D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/MeshesMaterials.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/Triangle.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/ALL_BUILD.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/House/CMakeFiles/House.dir
@@ -57,3 +57,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Zoom/CMakeFiles/AL
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/CameraMovement/CMakeFiles/CameraMovement.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/CameraMovement/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/CameraMovement/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CMakeFiles/ALL_BUILD.dir
