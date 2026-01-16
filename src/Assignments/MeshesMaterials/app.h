@@ -11,8 +11,9 @@
 #include "camera.h"
 #include "camera_controler.h"
 #include "glad/gl.h"
-#include "Engine/Mesh.h"
-#include "Engine/Material.h"
+#include "XeEngine/Mesh.h"
+#include "XeEngine/Material.h"
+#include "XeEngine/ColorMaterial.h"
 
 
 class SimpleShapeApplication : public xe::Application

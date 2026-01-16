@@ -15,4 +15,4 @@ add_library(xe-engine
         stb_image.cpp lights.h
         utils.h utils.cpp)
 
-target_link_libraries(xe-engine PUBLIC objreader PRIVATE spdlog::spdlog)
+target_link_libraries(xe-engine PUBLIC objreader application PRIVATE spdlog::spdlog)

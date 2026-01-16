@@ -1,0 +1,2 @@
+Dzięki zmianie z 9 wierzchołków na 7 wierzchołków oszędziliśmy 48 bajtów pamięci.
+Możemy także zaoczędzić  kolejne 48 bajtów robiąc osobny buffor dla kolorów, i użyć ponownie ich wartości, zamiast wpisywać je prosto koło pozycji.

@@ -1,18 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp">
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\AbstractMaterial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\mesh_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.h">
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\AbstractMaterial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\mesh_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

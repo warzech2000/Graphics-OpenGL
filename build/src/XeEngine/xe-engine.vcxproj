@@ -340,6 +340,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Application\application.vcxproj">
+      <Project>{219F79B1-6D5A-3421-B84C-039C6BF44663}</Project>
+      <Name>application</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.vcxproj">
       <Project>{E50F2789-8D2D-36A2-8174-86C33A04F874}</Project>
       <Name>glad</Name>
@@ -353,6 +357,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
       <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
       <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\3rdParty\MIKKTSpace\mikktspace.vcxproj">
+      <Project>{71AF436F-398C-36E9-9BED-A80FABC1EE42}</Project>
+      <Name>mikktspace</Name>
     </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\ObjectReader\objreader.vcxproj">
       <Project>{0320C9FF-324C-3B41-9D89-CD985C9437E8}</Project>

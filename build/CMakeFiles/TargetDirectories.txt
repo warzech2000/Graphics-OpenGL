@@ -18,13 +18,16 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/_deps/spdlog-build/CMakeFiles/ALL_
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Application/CMakeFiles/application.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Application/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Application/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/3rdParty/MIKKTSpace/CMakeFiles/mikktspace.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/3rdParty/MIKKTSpace/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/3rdParty/MIKKTSpace/CMakeFiles/ALL_BUILD.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/ObjectReader/CMakeFiles/objreader.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/ObjectReader/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/ObjectReader/CMakeFiles/ALL_BUILD.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/xe-engine.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/XeEngine/CMakeFiles/ALL_BUILD.dir
-D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/engine.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/Engine.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Engine/CMakeFiles/ALL_BUILD.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Triangle/CMakeFiles/Triangle.dir

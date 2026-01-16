@@ -7,50 +7,94 @@
 #include <vector>
 #include "glad/gl.h"
 
+#include "Application/RegisteredObject.h"
+#include "Material.h"
 
 namespace xe {
 
-    class Material;
-
-    struct SubMesh {
-        SubMesh(GLuint start, GLuint end) : start(start), end(end) {}
-
-        GLuint start;
-        GLuint end;
-
-        GLuint count() const { return end - start; }
+    enum AttributeType {
+        POSITION = 0,
+        NORMAL = 1,
+        TANGENT = 2,
+        TEXCOORD_0 = 3,
+        TEXCOORD_1 = 4,
+        COLOR_0 = 5,
+        COUNT = 6
     };
 
-    class Mesh {
-        public:
-        Mesh();
 
-        void allocate_vertex_buffer(size_t size, GLenum hint);
+    class Mesh : public RegisteredObject {
+    protected:
+        std::vector<GLuint> attributes_;
+    public:
 
-        void allocate_index_buffer(size_t size, GLenum hint);
+
+        Mesh(GLsizei stride, GLsizei v_buffer_size, GLenum v_buffer_hint,
+             GLsizei i_buffer_size, GLenum index_type, GLenum i_buffer_hint);
+
+        virtual ~Mesh() {};
+
 
         void load_vertices(size_t offset, size_t size, void *data);
 
         void load_indices(size_t offset, size_t size, void *data);
 
-        void vertex_attrib_pointer(GLuint index, GLuint size, GLenum type, GLsizei stride, GLsizei offset);
+        void *map_vertex_buffer();
 
-        void add_submesh(GLuint start, GLuint end, Material* mat = nullptr);
+        void unmap_vertex_buffer();
+
+        void *map_index_buffer();
+
+        void unmap_index_buffer();
+
+        void add_attribute(AttributeType attr_type, GLuint size, GLenum type, GLsizei offset) const;
+
         void add_submesh(GLuint start, GLuint end) {
-            add_submesh(start, end, nullptr);
+            primitives_.emplace_back(start, end);
         }
 
-        void draw() const;
+        void add_submesh(GLuint start, GLuint end, const Material *material) {
+            primitives_.emplace_back(start, end, material);
+        }
+
+        void add_primitive(GLuint start, GLuint end) {
+            add_submesh(start, end);
+        }
+
+        void add_primitive(GLuint start, GLuint end, const Material *material) {
+            add_submesh(start, end, material);
+        }
+
+        virtual void draw() const;
+
+        struct SubMesh {
+            SubMesh(GLuint start, GLuint end) :
+                    start(start), end(end), material(xe::NullMaterial::null_material()) {}
+
+            SubMesh(GLuint start, GLuint end, const Material *material) :
+                    start(start), end(end), material(material) {}
+
+            const GLuint start;
+            const GLuint end;
+
+            GLuint count() const { return end - start; }
+
+            const Material *material;
+
+        };
+
 
     private:
-
+        GLuint index_size_;
         GLuint vao_;
         GLuint v_buffer_;
         GLuint i_buffer_;
+        const GLenum index_type_;
+        const GLsizei stride_;
 
-        std::vector<SubMesh> submeshes_;
-        std::vector<Material*> materials_;
+        std::vector<SubMesh> primitives_;
 
     };
+
 
 }

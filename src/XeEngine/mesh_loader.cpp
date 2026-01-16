@@ -8,7 +8,7 @@
 
 #include <memory>
 
-
+#define GLM_ENABLE_EXPERIMENTAL
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_sinks.h"
 #include "glm/gtx/string_cast.hpp"

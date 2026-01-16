@@ -315,6 +315,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\ObjectReader\obj_reader.cpp" />
     <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\ObjectReader\obj_reader.h" />
     <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\ObjectReader\sMesh.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\ObjectReader\sMesh.cpp" />
     <Object Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.dir\$(Configuration)\gl.obj" />
   </ItemGroup>
   <ItemGroup />
@@ -338,6 +339,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
       <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
       <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\3rdParty\MIKKTSpace\mikktspace.vcxproj">
+      <Project>{71AF436F-398C-36E9-9BED-A80FABC1EE42}</Project>
+      <Name>mikktspace</Name>
     </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-build\spdlog.vcxproj">
       <Project>{23DF7309-8CDE-382E-A1CF-4F3BE60B2A14}</Project>

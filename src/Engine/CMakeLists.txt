@@ -3,7 +3,6 @@ project(Engine CXX)
 
 add_compile_definitions(PROJECT_NAME="${PROJECT_NAME}" PROJECT_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 
-add_library(engine
-        Mesh.h Mesh.cpp
-        Material.h Material.cpp
-        )
+file(GLOB SRC_FILES ${PROJECT_SOURCE_DIR}/*.cpp ${PROJECT_SOURCE_DIR}/*.h)
+add_library(Engine ${SRC_FILES})
+target_link_libraries(Engine PUBLIC objreader OGL spdlog::spdlog)

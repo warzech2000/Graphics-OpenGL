@@ -8,32 +8,32 @@
 #include <glm/glm.hpp>
 
 #include "Application/utils.h"
+#include "Application/RegisteredObject.h"
 
 namespace xe {
 
-    class Material {
+    class Material : public RegisteredObject {
     public:
-        virtual void bind() = 0;
+        virtual void bind() const = 0;
 
-        virtual void unbind() {};
+        virtual void unbind() const {};
+
     };
 
-    class ColorMaterial : public Material {
+
+    class NullMaterial : public Material {
     public:
-        ColorMaterial(const glm::vec4 color) : color_(color) {}
 
-        void bind();
+        void bind() const override {};
 
-        static void init();
-
-        static GLuint program() { return shader_; }
+        static NullMaterial *null_material() {
+            if(!null_material_)
+                null_material_ = new NullMaterial;
+            return null_material_;
+        };
 
     private:
-        static GLuint shader_;
-        static GLuint color_uniform_buffer_;
-
-        glm::vec4 color_;
-
+        static NullMaterial* null_material_;
     };
 
 

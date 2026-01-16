@@ -182,6 +182,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{17297639-7EC9-3E69-B301-F2A6A09CD58B}</Project>
       <Name>Colors</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.vcxproj">
+      <Project>{08BA4107-D7A5-31A8-AF2F-CBBB6C8D6AE8}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Assignments\House\House.vcxproj">
       <Project>{BD70379F-F41C-325E-8C97-1BF04F17B841}</Project>
       <Name>House</Name>
@@ -226,10 +230,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{219F79B1-6D5A-3421-B84C-039C6BF44663}</Project>
       <Name>application</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\engine.vcxproj">
-      <Project>{98AF2B2F-4C51-3AD3-BE2A-66A984B331B0}</Project>
-      <Name>engine</Name>
-    </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.vcxproj">
       <Project>{E50F2789-8D2D-36A2-8174-86C33A04F874}</Project>
       <Name>glad</Name>
@@ -243,6 +243,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
       <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
       <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\3rdParty\MIKKTSpace\mikktspace.vcxproj">
+      <Project>{71AF436F-398C-36E9-9BED-A80FABC1EE42}</Project>
+      <Name>mikktspace</Name>
     </ProjectReference>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\ObjectReader\objreader.vcxproj">
       <Project>{0320C9FF-324C-3B41-9D89-CD985C9437E8}</Project>

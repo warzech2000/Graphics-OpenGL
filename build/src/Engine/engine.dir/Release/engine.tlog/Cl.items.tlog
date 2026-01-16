@@ -1,2 +1,5 @@
-D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\engine.dir\Release\Mesh.obj
-D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\engine.dir\Release\Material.obj
+D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\AbstractMaterial.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.dir\Release\AbstractMaterial.obj
+D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.dir\Release\Material.obj
+D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.dir\Release\Mesh.obj
+D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\mesh_loader.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.dir\Release\mesh_loader.obj
+D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\utils.cpp;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Engine.dir\Release\utils.obj

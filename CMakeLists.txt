@@ -91,6 +91,13 @@ find_package(OpenGL REQUIRED)
 link_libraries(OpenGL::GL glfw glm glad)
 add_subdirectory(src/Application)
 
+# Add MIKKTSpace before ObjectReader since ObjectReader depends on it
+if (EXISTS ${SOURCE_DIR}/3rdParty/MIKKTSpace)
+    add_subdirectory(src/3rdParty/MIKKTSpace)
+else ()
+    message("Warning: directory MIKKTSpace does not exists.")
+endif ()
+
 if (EXISTS ${SOURCE_DIR}/ObjectReader)
     add_subdirectory(src/ObjectReader)
 else ()

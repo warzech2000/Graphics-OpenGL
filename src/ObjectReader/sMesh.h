@@ -8,7 +8,6 @@
 #include <vector>
 #include <array>
 
-#include "spdlog/spdlog.h"
 #include "glm/glm.hpp"
 
 #include "Geometry/bounding_box.h"
@@ -20,9 +19,9 @@ namespace xe {
 
     using mtl_material_t = tinyobj::material_t;
 
-
+    // Encapsulates a mesh loaded from an OBJ file.
     struct sMesh {
-        static const uint32_t MAX_TEXCOORDS = 4u;
+        static const uint32_t MAX_TEXCOORDS = 2u;
 
         sMesh() : has_normals(false), has_tangents(false), has_colors(false) {
             for (auto &&t: has_texcoords)
@@ -50,6 +49,7 @@ namespace xe {
 
         std::vector <mtl_material_t> materials;
         std::vector <SubMesh> submeshes;
+        std::vector<unsigned int> smoothing_group_ids;
 
         xe::BoundingBox<3> bb;
 

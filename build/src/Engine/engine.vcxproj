@@ -22,11 +22,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{98AF2B2F-4C51-3AD3-BE2A-66A984B331B0}</ProjectGuid>
+    <ProjectGuid>{08BA4107-D7A5-31A8-AF2F-CBBB6C8D6AE8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>engine</ProjectName>
+    <ProjectName>Engine</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -60,25 +60,26 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">engine.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">engine</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Engine.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">engine.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">engine</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Engine.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">engine.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">engine</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Engine.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\Engine\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">engine.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">engine</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Engine.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -99,16 +100,16 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,7 +122,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -141,18 +143,18 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -165,7 +167,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -185,18 +188,18 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -209,7 +212,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -230,16 +234,16 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Engine";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Engine\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Engine\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -308,10 +312,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.h" />
-    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp" />
-    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\AbstractMaterial.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\AbstractMaterial.h" />
     <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Material.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\Mesh.h" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\light.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\mesh_loader.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\mesh_loader.h" />
+    <ClCompile Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\utils.cpp" />
+    <ClInclude Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\Engine\utils.h" />
     <Object Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\glad.dir\$(Configuration)\gl.obj" />
   </ItemGroup>
   <ItemGroup />
@@ -335,6 +346,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-build\glm\glm.vcxproj">
       <Project>{19BD21BC-8BC7-36A3-8514-8DFA40BB75AC}</Project>
       <Name>glm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\3rdParty\MIKKTSpace\mikktspace.vcxproj">
+      <Project>{71AF436F-398C-36E9-9BED-A80FABC1EE42}</Project>
+      <Name>mikktspace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\src\ObjectReader\objreader.vcxproj">
+      <Project>{0320C9FF-324C-3B41-9D89-CD985C9437E8}</Project>
+      <Name>objreader</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-build\spdlog.vcxproj">
+      <Project>{23DF7309-8CDE-382E-A1CF-4F3BE60B2A14}</Project>
+      <Name>spdlog</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
