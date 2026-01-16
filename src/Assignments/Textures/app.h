@@ -13,6 +13,7 @@
 #include "glad/gl.h"
 #include "XeEngine/Mesh.h"
 #include "XeEngine/ColorMaterial.h"
+#include <memory>
 
 
 class SimpleShapeApplication : public xe::Application
@@ -47,6 +48,11 @@ public:
         meshes_.push_back(mesh);
     }
 
+    void add_submesh(std::shared_ptr<xe::Mesh> mesh) {
+        meshes_shared_.push_back(mesh);
+        meshes_.push_back(mesh.get());
+    }
+
     ~SimpleShapeApplication() {
         if (camera_) {
             delete camera_;
@@ -54,13 +60,8 @@ public:
         if (controler_) {
             delete controler_;
         }
-        if (!meshes_.empty()) {
-            for (auto p : meshes_)
-            {
-                delete p;
-            }
-            meshes_.clear();
-        }
+        meshes_.clear();
+        meshes_shared_.clear();
     }
 
 private:
@@ -78,6 +79,7 @@ private:
     CameraControler *controler_;
 
     std::vector<xe::Mesh*> meshes_;
+    std::vector<std::shared_ptr<xe::Mesh>> meshes_shared_;
 
     float angle_ = 0.0f;
     int w,h = 400.f;

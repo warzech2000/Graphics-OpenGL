@@ -108,12 +108,12 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -165,14 +165,14 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -224,14 +224,14 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -284,12 +284,12 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME="Textures";PROJECT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";ROOT_DIR="D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures";SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL\";XE_DEBUG;MAJOR=4;MINOR=6;PROJECT_NAME=\"Textures\";PROJECT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";ROOT_DIR=\"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/Assignments/Textures\";SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\src\3rdParty\glad\glad_4_6\glad\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glfw-src\include;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\glm-src;D:\Grafika 3D\Base\3d 2\Graphics-OpenGL\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>

@@ -13,6 +13,7 @@
 #define STB_IMAGE_IMPLEMENTATION 1
 #include "3rdParty/stb/stb_image.h"
 #include "spdlog/spdlog.h"
+#include "XeEngine/mesh_loader.h"
 
 
 void SimpleShapeApplication::init() {
@@ -45,41 +46,6 @@ void SimpleShapeApplication::init() {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
 
-    std::vector<GLushort> indices = {
-        // Base
-        0, 1, 2,
-        0, 2, 3,
-
-        // Side
-        4, 5, 6,
-        7, 8, 9,
-        10,11,12,
-        13,14,15
-    };
-
-    std::vector<GLfloat> vertices = {
-        0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
-       -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
-       -0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
-        0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
-   
-        0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
-        0.0f,  0.5f,  0.0f,  0.0f, 1.0f,
-       -0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
-   
-       -0.5f, -0.5f,  0.5f,  0.5f, 0.8090f,
-        0.0f,  0.5f,  0.0f,  1.0f, 1.0f,
-       -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
-   
-       -0.5f, -0.5f, -0.5f,  0.8090f, 0.5f,
-        0.0f,  0.5f,  0.0f,  1.0f, 0.0f,
-        0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
-   
-        0.5f, -0.5f, -0.5f,  0.5f, 0.1910f,
-        0.0f,  0.5f,  0.0f,  0.0f, 0.0f,
-        0.5f, -0.5f,  0.5f,  0.1910f, 0.5f,
-   };
-
     // UBO
     glGenBuffers(1, &u_pvm_buffer_);
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
@@ -108,59 +74,12 @@ void SimpleShapeApplication::init() {
     set_controler(new CameraControler(camera()));
 #pragma endregion
 
-    auto pyramid = new xe::Mesh;
-
-    size_t indices_sizeof = sizeof(indices[0]) * indices.size();
-    pyramid->allocate_index_buffer(indices_sizeof, GL_STATIC_DRAW);
-    pyramid->load_indices(0, indices_sizeof, indices.data());
-
-    size_t vertices_sizeof = sizeof(vertices[0]) * vertices.size();
-    pyramid->allocate_vertex_buffer(vertices_sizeof, GL_STATIC_DRAW);
-    pyramid->load_vertices(0, vertices_sizeof, vertices.data());
-
-    pyramid->vertex_attrib_pointer(0, 3, GL_FLOAT, 5 * sizeof(vertices[0]), 0);
-    pyramid->vertex_attrib_pointer(1, 2, GL_FLOAT, 5 * sizeof(vertices[0]), 3 * sizeof(vertices[0]));
-
-    // Load texture
-    stbi_set_flip_vertically_on_load(true);
-    GLint width, height, channels;
-    auto texture_file = std::string(ROOT_DIR) + "/Models/multicolor.png";
-    auto img = stbi_load(texture_file.c_str(), &width, &height, &channels, 0);
-    if (!img) {
-        std::cerr << "WARNING: Could not read image from file: " << texture_file << std::endl;
-        spdlog::warn("Could not read image from file `{}'", texture_file);
-    } else {
-        std::cout << "Texture loaded: " << width << "x" << height << ", channels: " << channels << std::endl;
+    // Load pyramid from OBJ file
+    auto pyramid_mesh = xe::load_mesh_from_obj(std::string(ROOT_DIR) + "/Models/pyramid.obj",
+                                                std::string(ROOT_DIR) + "/Models");
+    if (pyramid_mesh) {
+        add_submesh(pyramid_mesh);
     }
-
-    GLuint texture = 0;
-    if (img) {
-        glGenTextures(1, &texture);
-        glBindTexture(GL_TEXTURE_2D, texture);
-        
-        GLenum format;
-        if (channels == 3)
-            format = GL_RGB;
-        else if (channels == 4)
-            format = GL_RGBA;
-        else
-            format = GL_RGB;
-
-        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, img);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        
-        stbi_image_free(img);
-        glBindTexture(GL_TEXTURE_2D, 0);
-    }
-
-    pyramid->add_submesh(0, 6, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0));  // base
-    pyramid->add_submesh(6, 9, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0));  // side 1 (red)
-    pyramid->add_submesh(9, 12, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0)); // side 2 (blue)
-    pyramid->add_submesh(12, 15, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0)); // side 3 (orange)
-    pyramid->add_submesh(15, 18, new xe::ColorMaterial(glm::vec4(1.0f, 1.0f, 1.0f, 1.0f), texture, 0)); // side 4 (green)
-
-    add_submesh(pyramid);
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
 

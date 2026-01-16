@@ -113,10 +113,9 @@ namespace xe {
                         material = make_phong_material(mat, mtl_dir);
                         break;
                 }
-
-                mesh->add_submesh(sm.start, sm.end, material, false);
             }
 
+            mesh->add_submesh(3 * sm.start, 3 * sm.end, material, false);
         }
         return std::shared_ptr<Mesh>(mesh);
 
