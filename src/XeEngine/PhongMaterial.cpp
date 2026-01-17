@@ -4,6 +4,7 @@
 
 #include "PhongMaterial.h"
 
+#include <fstream>
 #include "Application/utils.h"
 #include "XeEngine/utils.h"
 #include "spdlog/spdlog.h"
@@ -15,7 +16,13 @@ namespace xe {
     GLint  PhongMaterial::uniform_map_Kd_location_ = 0;
 
     void PhongMaterial::bind() {
-        glUseProgram(program());
+        GLuint prog = program();
+        if (prog == 0) {
+            spdlog::error("PhongMaterial::bind() - shader program is 0!");
+            return;
+        }
+        glUseProgram(prog);
+        spdlog::debug("PhongMaterial::bind() - using program {}", prog);
         int use_map_Kd = 0;
         if (map_Kd_ > 0) {
             OGL_CALL(glUniform1i(uniform_map_Kd_location_, map_Kd_unit_));
@@ -26,8 +33,10 @@ namespace xe {
         OGL_CALL(glBindBufferBase(GL_UNIFORM_BUFFER, 0, material_uniform_buffer_));
 
         glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
-        glBufferSubData(GL_UNIFORM_BUFFER, 4* sizeof(float), sizeof(glm::vec4), &Kd_[0]);
-        glBufferSubData(GL_UNIFORM_BUFFER, 15 * sizeof(float), sizeof(GLint), &use_map_Kd);
+        // Write Kd at offset 0 (matching Color uniform block layout)
+        glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::vec4), &Kd_[0]);
+        // Write use_map_Kd at offset 16 (after vec4 Kd)
+        glBufferSubData(GL_UNIFORM_BUFFER, 4 * sizeof(float), sizeof(GLint), &use_map_Kd);
         OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, 0u));
 
     }
@@ -38,14 +47,36 @@ namespace xe {
     }
 
     void PhongMaterial::init() {
-
+        {
+            std::ofstream logfile("phong_debug.log", std::ios::app);
+            logfile << "[PHONG] PhongMaterial::init() started\n";
+            logfile.flush();
+        }
+        
+        std::string vs_path = std::string(PROJECT_DIR) + "/shaders/phong_vs.glsl";
+        std::string fs_path = std::string(PROJECT_DIR) + "/shaders/phong_fs.glsl";
+        
+        {
+            std::ofstream logfile("phong_debug.log", std::ios::app);
+            logfile << "[PHONG] Shader paths: vs=" << vs_path << " fs=" << fs_path << "\n";
+            logfile.flush();
+        }
 
         auto program = xe::utils::create_program(
-                {{GL_VERTEX_SHADER,   std::string(PROJECT_DIR) + "/shaders/phong_vs.glsl"},
-                 {GL_FRAGMENT_SHADER, std::string(PROJECT_DIR) + "/shaders/phong_fs.glsl"}});
+                {{GL_VERTEX_SHADER,   vs_path},
+                 {GL_FRAGMENT_SHADER, fs_path}});
+        
+        {
+            std::ofstream logfile("phong_debug.log", std::ios::app);
+            logfile << "[PHONG] create_program returned: " << program << "\n";
+            logfile.flush();
+        }
         if (!program) {
+            spdlog::error("PhongMaterial::init() - Failed to create shader program!");
             std::cerr << "Invalid program" << std::endl;
             exit(-1);
+        } else {
+            spdlog::info("PhongMaterial::init() - Shader program created successfully: {}", program);
         }
 
         shader_ = program;
@@ -53,7 +84,8 @@ namespace xe {
         glGenBuffers(1, &material_uniform_buffer_);
 
         glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
-        glBufferData(GL_UNIFORM_BUFFER, 18* sizeof(float), nullptr, GL_STATIC_DRAW);
+        // Buffer size: vec4 Kd (16 bytes) + int use_map_Kd (4 bytes) = 20 bytes, padded to 24 for alignment
+        glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::vec4) + sizeof(GLint), nullptr, GL_STATIC_DRAW);
         glBindBuffer(GL_UNIFORM_BUFFER, 0u);
 #if __APPLE__
         uniform_block_binding(shader_, "Material",0);

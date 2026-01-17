@@ -4,16 +4,19 @@
 
 #pragma once
 
-#include "glm/glm.hpp"
+#include <glm/glm.hpp>
 
-struct PointLight {
-    PointLight() = default;
+namespace xe {
+    struct PointLight {
+        PointLight() = default;
+        PointLight(const glm::vec3 &pos, const glm::vec3 &color, float intensity, float radius)
+                : position_in_world_space(pos),
+                  color(color), intensity(intensity), radius(radius) {}
 
-    PointLight(const glm::vec3 &pos, const glm::vec3 &color, const glm::vec3 &atn) : position_in_world_space(pos),
-                                                                                     color(color), atn(atn) {}
-
-    alignas(16) glm::vec3 position_in_world_space;
-    alignas(16) glm::vec3 position_in_view_space;
-    alignas(16) glm::vec3 color;
-    alignas(16) glm::vec3 atn;
-};
+        alignas(16) glm::vec3 position_in_world_space;
+        alignas(16) glm::vec3 position_in_view_space;
+        alignas(16) glm::vec3 color;
+        float intensity;
+        float radius;
+    };
+}

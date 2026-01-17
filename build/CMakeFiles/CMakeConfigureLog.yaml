@@ -70,7 +70,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 16.01.2026 20:41:46.
+      Build started 16.01.2026 20:58:59.
       
       Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -613,7 +613,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 16.01.2026 20:41:47.
+      Build started 16.01.2026 20:59:00.
       
       Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\4.2.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -642,7 +642,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.56
+      Time Elapsed 00:00:00.54
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -962,8 +962,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-v5z190"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-v5z190"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-06yzdx"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-06yzdx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -973,39 +973,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-v5z190'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-06yzdx'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_64d13.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c566.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:47.
+        Build started 16.01.2026 20:59:01.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5z190\\cmTC_64d13.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06yzdx\\cmTC_1c566.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5z190\\Debug\\".
-          Creating directory "cmTC_64d13.dir\\Debug\\cmTC_64d13.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06yzdx\\Debug\\".
+          Creating directory "cmTC_1c566.dir\\Debug\\cmTC_1c566.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_64d13.dir\\Debug\\cmTC_64d13.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_64d13.dir\\Debug\\cmTC_64d13.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1c566.dir\\Debug\\cmTC_1c566.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1c566.dir\\Debug\\cmTC_1c566.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_64d13.dir\\Debug\\\\" /Fd"cmTC_64d13.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c566.dir\\Debug\\\\" /Fd"cmTC_1c566.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_64d13.dir\\Debug\\\\" /Fd"cmTC_64d13.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1c566.dir\\Debug\\\\" /Fd"cmTC_1c566.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5z190\\Debug\\cmTC_64d13.exe" /INCREMENTAL /ILK:"cmTC_64d13.dir\\Debug\\cmTC_64d13.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-v5z190/Debug/cmTC_64d13.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-v5z190/Debug/cmTC_64d13.lib" /MACHINE:X64  /machine:x64 cmTC_64d13.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_64d13.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5z190\\Debug\\cmTC_64d13.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06yzdx\\Debug\\cmTC_1c566.exe" /INCREMENTAL /ILK:"cmTC_1c566.dir\\Debug\\cmTC_1c566.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-06yzdx/Debug/cmTC_1c566.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-06yzdx/Debug/cmTC_1c566.lib" /MACHINE:X64  /machine:x64 cmTC_1c566.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1c566.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06yzdx\\Debug\\cmTC_1c566.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_64d13.dir\\Debug\\cmTC_64d13.tlog\\unsuccessfulbuild".
-          Touching "cmTC_64d13.dir\\Debug\\cmTC_64d13.tlog\\cmTC_64d13.lastbuildstate".
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5z190\\cmTC_64d13.vcxproj" (default targets).
+          Deleting file "cmTC_1c566.dir\\Debug\\cmTC_1c566.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1c566.dir\\Debug\\cmTC_1c566.tlog\\cmTC_1c566.lastbuildstate".
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-06yzdx\\cmTC_1c566.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.54
+        Time Elapsed 00:00:00.53
         
       exitCode: 0
   -
@@ -1045,8 +1045,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-biw6rv"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-biw6rv"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ukpm22"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ukpm22"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1055,39 +1055,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-biw6rv'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ukpm22'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5cc74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ce42e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:48.
+        Build started 16.01.2026 20:59:02.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-biw6rv\\cmTC_5cc74.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ukpm22\\cmTC_ce42e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-biw6rv\\Debug\\".
-          Creating directory "cmTC_5cc74.dir\\Debug\\cmTC_5cc74.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ukpm22\\Debug\\".
+          Creating directory "cmTC_ce42e.dir\\Debug\\cmTC_ce42e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_5cc74.dir\\Debug\\cmTC_5cc74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_5cc74.dir\\Debug\\cmTC_5cc74.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ce42e.dir\\Debug\\cmTC_ce42e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ce42e.dir\\Debug\\cmTC_ce42e.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_5cc74.dir\\Debug\\\\" /Fd"cmTC_5cc74.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ce42e.dir\\Debug\\\\" /Fd"cmTC_ce42e.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_5cc74.dir\\Debug\\\\" /Fd"cmTC_5cc74.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ce42e.dir\\Debug\\\\" /Fd"cmTC_ce42e.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-biw6rv\\Debug\\cmTC_5cc74.exe" /INCREMENTAL /ILK:"cmTC_5cc74.dir\\Debug\\cmTC_5cc74.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-biw6rv/Debug/cmTC_5cc74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-biw6rv/Debug/cmTC_5cc74.lib" /MACHINE:X64  /machine:x64 cmTC_5cc74.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_5cc74.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-biw6rv\\Debug\\cmTC_5cc74.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ukpm22\\Debug\\cmTC_ce42e.exe" /INCREMENTAL /ILK:"cmTC_ce42e.dir\\Debug\\cmTC_ce42e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ukpm22/Debug/cmTC_ce42e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-ukpm22/Debug/cmTC_ce42e.lib" /MACHINE:X64  /machine:x64 cmTC_ce42e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_ce42e.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ukpm22\\Debug\\cmTC_ce42e.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_5cc74.dir\\Debug\\cmTC_5cc74.tlog\\unsuccessfulbuild".
-          Touching "cmTC_5cc74.dir\\Debug\\cmTC_5cc74.tlog\\cmTC_5cc74.lastbuildstate".
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-biw6rv\\cmTC_5cc74.vcxproj" (default targets).
+          Deleting file "cmTC_ce42e.dir\\Debug\\cmTC_ce42e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ce42e.dir\\Debug\\cmTC_ce42e.tlog\\cmTC_ce42e.lastbuildstate".
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ukpm22\\cmTC_ce42e.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.51
+        Time Elapsed 00:00:00.52
         
       exitCode: 0
   -
@@ -1336,8 +1336,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g8f70m"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g8f70m"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4vxfgt"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4vxfgt"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1347,39 +1347,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g8f70m'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4vxfgt'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_98a3e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_482ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:52.
+        Build started 16.01.2026 20:59:05.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\cmTC_98a3e.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\cmTC_482ba.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\Debug\\".
-          Creating directory "cmTC_98a3e.dir\\Debug\\cmTC_98a3e.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\Debug\\".
+          Creating directory "cmTC_482ba.dir\\Debug\\cmTC_482ba.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_98a3e.dir\\Debug\\cmTC_98a3e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_98a3e.dir\\Debug\\cmTC_98a3e.tlog\\unsuccessfulbuild".
+          Creating "cmTC_482ba.dir\\Debug\\cmTC_482ba.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_482ba.dir\\Debug\\cmTC_482ba.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_98a3e.dir\\Debug\\\\" /Fd"cmTC_98a3e.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_482ba.dir\\Debug\\\\" /Fd"cmTC_482ba.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_98a3e.dir\\Debug\\\\" /Fd"cmTC_98a3e.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\src.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_482ba.dir\\Debug\\\\" /Fd"cmTC_482ba.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\src.c"
           src.c
-        D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\cmTC_98a3e.vcxproj]
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\cmTC_98a3e.vcxproj" (default targets) -- FAILED.
+        D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\cmTC_482ba.vcxproj]
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\cmTC_482ba.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\cmTC_98a3e.vcxproj" (default target) (1) ->
+        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\cmTC_482ba.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g8f70m\\cmTC_98a3e.vcxproj]
+          D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4vxfgt\\cmTC_482ba.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.33
+        Time Elapsed 00:00:00.34
         
       exitCode: 1
   -
@@ -1392,8 +1392,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yjg0y5"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yjg0y5"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-9vpnm2"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-9vpnm2"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1403,41 +1403,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yjg0y5'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-9vpnm2'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_96e02.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9386c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:52.
+        Build started 16.01.2026 20:59:05.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\cmTC_96e02.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\cmTC_9386c.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\Debug\\".
-          Creating directory "cmTC_96e02.dir\\Debug\\cmTC_96e02.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\Debug\\".
+          Creating directory "cmTC_9386c.dir\\Debug\\cmTC_9386c.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_96e02.dir\\Debug\\cmTC_96e02.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_96e02.dir\\Debug\\cmTC_96e02.tlog\\unsuccessfulbuild".
+          Creating "cmTC_9386c.dir\\Debug\\cmTC_9386c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9386c.dir\\Debug\\cmTC_9386c.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_96e02.dir\\Debug\\\\" /Fd"cmTC_96e02.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_9386c.dir\\Debug\\\\" /Fd"cmTC_9386c.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_96e02.dir\\Debug\\\\" /Fd"cmTC_96e02.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_9386c.dir\\Debug\\\\" /Fd"cmTC_9386c.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\Debug\\cmTC_96e02.exe" /INCREMENTAL /ILK:"cmTC_96e02.dir\\Debug\\cmTC_96e02.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yjg0y5/Debug/cmTC_96e02.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yjg0y5/Debug/cmTC_96e02.lib" /MACHINE:X64  /machine:x64 cmTC_96e02.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\cmTC_96e02.vcxproj]
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\cmTC_96e02.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\Debug\\cmTC_9386c.exe" /INCREMENTAL /ILK:"cmTC_9386c.dir\\Debug\\cmTC_9386c.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-9vpnm2/Debug/cmTC_9386c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-9vpnm2/Debug/cmTC_9386c.lib" /MACHINE:X64  /machine:x64 cmTC_9386c.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\cmTC_9386c.vcxproj]
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\cmTC_9386c.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\cmTC_96e02.vcxproj" (default target) (1) ->
+        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\cmTC_9386c.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yjg0y5\\cmTC_96e02.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9vpnm2\\cmTC_9386c.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.44
+        Time Elapsed 00:00:00.43
         
       exitCode: 1
   -
@@ -1450,8 +1450,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yably5"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yably5"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-w89gum"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-w89gum"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1461,41 +1461,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yably5'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-w89gum'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_67b92.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_07e32.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:53.
+        Build started 16.01.2026 20:59:06.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\cmTC_67b92.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\cmTC_07e32.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\Debug\\".
-          Creating directory "cmTC_67b92.dir\\Debug\\cmTC_67b92.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\Debug\\".
+          Creating directory "cmTC_07e32.dir\\Debug\\cmTC_07e32.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_67b92.dir\\Debug\\cmTC_67b92.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_67b92.dir\\Debug\\cmTC_67b92.tlog\\unsuccessfulbuild".
+          Creating "cmTC_07e32.dir\\Debug\\cmTC_07e32.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_07e32.dir\\Debug\\cmTC_07e32.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_67b92.dir\\Debug\\\\" /Fd"cmTC_67b92.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_07e32.dir\\Debug\\\\" /Fd"cmTC_07e32.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_67b92.dir\\Debug\\\\" /Fd"cmTC_67b92.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_07e32.dir\\Debug\\\\" /Fd"cmTC_07e32.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\Debug\\cmTC_67b92.exe" /INCREMENTAL /ILK:"cmTC_67b92.dir\\Debug\\cmTC_67b92.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yably5/Debug/cmTC_67b92.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-yably5/Debug/cmTC_67b92.lib" /MACHINE:X64  /machine:x64 cmTC_67b92.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\cmTC_67b92.vcxproj]
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\cmTC_67b92.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\Debug\\cmTC_07e32.exe" /INCREMENTAL /ILK:"cmTC_07e32.dir\\Debug\\cmTC_07e32.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-w89gum/Debug/cmTC_07e32.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-w89gum/Debug/cmTC_07e32.lib" /MACHINE:X64  /machine:x64 cmTC_07e32.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\cmTC_07e32.vcxproj]
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\cmTC_07e32.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\cmTC_67b92.vcxproj" (default target) (1) ->
+        "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\cmTC_07e32.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yably5\\cmTC_67b92.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w89gum\\cmTC_07e32.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.44
+        Time Elapsed 00:00:00.42
         
       exitCode: 1
   -
@@ -1507,8 +1507,8 @@ events:
     checks:
       - "Looking for _fwrite_nolock"
     directories:
-      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-d9071a"
-      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-d9071a"
+      source: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g0aizu"
+      binary: "D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g0aizu"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1517,39 +1517,39 @@ events:
       variable: "HAVE_FWRITE_UNLOCKED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-d9071a'
+        Change Dir: 'D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g0aizu'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_876ce.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ecf89.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 16.01.2026 20:41:58.
+        Build started 16.01.2026 20:59:11.
         
-        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\cmTC_876ce.vcxproj" on node 1 (default targets).
+        Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\cmTC_ecf89.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\Debug\\".
-          Creating directory "cmTC_876ce.dir\\Debug\\cmTC_876ce.tlog\\".
+          Creating directory "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\Debug\\".
+          Creating directory "cmTC_ecf89.dir\\Debug\\cmTC_ecf89.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_876ce.dir\\Debug\\cmTC_876ce.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_876ce.dir\\Debug\\cmTC_876ce.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ecf89.dir\\Debug\\cmTC_ecf89.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ecf89.dir\\Debug\\cmTC_ecf89.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_876ce.dir\\Debug\\\\" /Fd"cmTC_876ce.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\CheckSymbolExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_ecf89.dir\\Debug\\\\" /Fd"cmTC_ecf89.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\CheckSymbolExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35219 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_876ce.dir\\Debug\\\\" /Fd"cmTC_876ce.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\CheckSymbolExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_ecf89.dir\\Debug\\\\" /Fd"cmTC_ecf89.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\CheckSymbolExists.c"
           CheckSymbolExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\Debug\\cmTC_876ce.exe" /INCREMENTAL /ILK:"cmTC_876ce.dir\\Debug\\cmTC_876ce.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-d9071a/Debug/cmTC_876ce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-d9071a/Debug/cmTC_876ce.lib" /MACHINE:X64  /machine:x64 cmTC_876ce.dir\\Debug\\CheckSymbolExists.obj
-          cmTC_876ce.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\Debug\\cmTC_876ce.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\Debug\\cmTC_ecf89.exe" /INCREMENTAL /ILK:"cmTC_ecf89.dir\\Debug\\cmTC_ecf89.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g0aizu/Debug/cmTC_ecf89.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-g0aizu/Debug/cmTC_ecf89.lib" /MACHINE:X64  /machine:x64 cmTC_ecf89.dir\\Debug\\CheckSymbolExists.obj
+          cmTC_ecf89.vcxproj -> D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\Debug\\cmTC_ecf89.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_876ce.dir\\Debug\\cmTC_876ce.tlog\\unsuccessfulbuild".
-          Touching "cmTC_876ce.dir\\Debug\\cmTC_876ce.tlog\\cmTC_876ce.lastbuildstate".
-        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-d9071a\\cmTC_876ce.vcxproj" (default targets).
+          Deleting file "cmTC_ecf89.dir\\Debug\\cmTC_ecf89.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ecf89.dir\\Debug\\cmTC_ecf89.tlog\\cmTC_ecf89.lastbuildstate".
+        Done Building Project "D:\\Grafika 3D\\Base\\3d 2\\Graphics-OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g0aizu\\cmTC_ecf89.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.57
+        Time Elapsed 00:00:00.62
         
       exitCode: 0
 ...

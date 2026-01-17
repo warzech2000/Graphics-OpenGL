@@ -1,0 +1,6 @@
+[PHONG] PhongMaterial::init() started
+[PHONG] Shader paths: vs=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/shaders/phong_vs.glsl fs=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/shaders/phong_fs.glsl
+[PHONG] create_program returned: 9
+[PHONG] PhongMaterial::init() started
+[PHONG] Shader paths: vs=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/shaders/phong_vs.glsl fs=D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/src/XeEngine/shaders/phong_fs.glsl
+[PHONG] create_program returned: 9

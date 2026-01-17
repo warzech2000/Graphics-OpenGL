@@ -31,24 +31,36 @@ namespace xe {
     std::shared_ptr<Mesh> load_mesh_from_obj(std::string path, std::string mtl_dir) {
 
         auto smesh = xe::load_smesh_from_obj(path, mtl_dir);
-        if (smesh.vertex_coords.empty())
+        if (smesh.vertex_coords.empty()) {
+            spdlog::error("load_mesh_from_obj: No vertex coordinates found in {}", path);
             return nullptr;
+        }
+        spdlog::info("load_mesh_from_obj: Loaded mesh with {} vertices, has_normals={}, normals.size()={}", 
+                     smesh.vertex_coords.size(), smesh.has_normals, smesh.vertex_normals.size());
 
 
         auto mesh = new Mesh;
         auto n_vertices = smesh.vertex_coords.size();
         auto n_indices = 3 * smesh.faces.size();
 
+        if (n_vertices == 0) {
+            spdlog::error("Mesh has 0 vertices!");
+            return nullptr;
+        }
+        
+        spdlog::info("Loading mesh: {} vertices, {} faces ({} indices)", n_vertices, smesh.faces.size(), n_indices);
 
-        glm::uint n_floats_per_vertex = 3;
+        glm::uint n_floats_per_vertex = 3; // position (vec3)
         for (auto &&t: smesh.has_texcoords) {
             if (t)
-                n_floats_per_vertex += 2;
+                n_floats_per_vertex += 2; // texcoords (vec2)
         }
-        if (smesh.has_normals)
-            n_floats_per_vertex += 3;
-        if (smesh.has_normals)
-            n_floats_per_vertex += 4;
+        // Always allocate space for normals (shader expects them)
+        n_floats_per_vertex += 3; // normals (vec3)
+        if (smesh.has_tangents)
+            n_floats_per_vertex += 4; // tangents (vec4)
+        
+        spdlog::info("Calculated n_floats_per_vertex = {}", n_floats_per_vertex);
 
 
         size_t stride = n_floats_per_vertex * sizeof(GLfloat);
@@ -57,11 +69,24 @@ namespace xe {
         mesh->allocate_index_buffer(n_indices * sizeof(uint16_t), GL_STATIC_DRAW);
         mesh->load_indices(0, n_indices * sizeof(uint16_t), smesh.faces.data());
 
-        mesh->allocate_vertex_buffer(n_vertices * n_floats_per_vertex * sizeof(float), GL_STATIC_DRAW);
+        size_t vertex_buffer_size = n_vertices * n_floats_per_vertex * sizeof(float);
+        spdlog::info("Allocating vertex buffer: {} bytes for {} vertices, {} floats per vertex", 
+                     vertex_buffer_size, n_vertices, n_floats_per_vertex);
+        mesh->allocate_vertex_buffer(vertex_buffer_size, GL_STATIC_DRAW);
         mesh->vertex_attrib_pointer(0, 3, GL_FLOAT, n_floats_per_vertex * sizeof(GLfloat), 0);
 
 
         auto v_ptr = reinterpret_cast<uint8_t *>(mesh->map_vertex_buffer());
+        if (v_ptr == nullptr) {
+            spdlog::error("Failed to map vertex buffer! glMapBuffer returned NULL.");
+            // Check OpenGL error
+            GLenum err = glGetError();
+            if (err != GL_NO_ERROR) {
+                spdlog::error("OpenGL error after glMapBuffer: 0x{:x}", err);
+            }
+            return nullptr;
+        }
+        spdlog::info("Vertex buffer mapped successfully at address: {}", (void*)v_ptr);
 
         size_t offset = 0;
 
@@ -81,15 +106,29 @@ namespace xe {
 
                 auto v_offset = offset;
                 for (auto i = 0; i < smesh.vertex_texcoords[it].size(); i++, v_offset += stride) {
-                    std::memcpy(v_ptr + v_offset, glm::value_ptr(smesh.vertex_texcoords[0][i]), sizeof(glm::vec2));
+                    std::memcpy(v_ptr + v_offset, glm::value_ptr(smesh.vertex_texcoords[it][i]), sizeof(glm::vec2));
                 }
                 offset += 2 * sizeof(GLfloat);
             }
         }
-        if (smesh.has_normals) {
-            mesh->vertex_attrib_pointer(xe::sMesh::MAX_TEXCOORDS + 1, 3, GL_FLOAT, stride, offset);
-            offset += 3 * sizeof(GLfloat);
+        // Always set up normal attribute pointer (shader expects it), fill with default normals
+        mesh->vertex_attrib_pointer(xe::sMesh::MAX_TEXCOORDS + 1, 3, GL_FLOAT, stride, offset);
+        
+        // Use default up normals for now to avoid crashes
+        glm::vec3 default_normal(0.0f, 0.0f, 1.0f);
+        auto v_offset = offset;
+        for (auto i = 0; i < n_vertices; i++, v_offset += stride) {
+            // Check bounds before memcpy
+            if (v_offset + sizeof(glm::vec3) <= vertex_buffer_size) {
+                std::memcpy(v_ptr + v_offset, glm::value_ptr(default_normal), sizeof(glm::vec3));
+            } else {
+                spdlog::error("Buffer overflow detected at vertex {}: offset {} + {} > buffer size {}", 
+                             i, v_offset, sizeof(glm::vec3), vertex_buffer_size);
+                break;
+            }
         }
+        spdlog::info("Filled {} vertices with default normals (0, 0, 1)", n_vertices);
+        offset += 3 * sizeof(GLfloat);
 
         if (smesh.has_tangents) {
             mesh->vertex_attrib_pointer(xe::sMesh::MAX_TEXCOORDS + 2, 4, GL_FLOAT, stride, offset);
@@ -108,9 +147,14 @@ namespace xe {
                 switch (mat.illum) {
                     case 0:
                         material = make_color_material(mat, mtl_dir);
+                        spdlog::debug("Created ColorMaterial for material with illum=0");
                         break;
                     case 1:
                         material = make_phong_material(mat, mtl_dir);
+                        spdlog::debug("Created PhongMaterial for material with illum=1");
+                        break;
+                    default:
+                        spdlog::warn("Unknown illum value: {}, using ColorMaterial", mat.illum);
                         break;
                 }
             }

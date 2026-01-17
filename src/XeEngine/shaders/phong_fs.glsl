@@ -1,71 +1,62 @@
 #version 460
 
-#define MAX_POINT_LIGHTS 16
-
 layout(location=0) out vec4 vFragColor;
 
+const int MAX_POINT_LIGHTS = 24;
 
 #if __VERSION__ > 410
-layout(std140, binding=0) uniform Material {
+layout(std140, binding=0) uniform Color {
 #else
-    layout(std140) uniform Material {
-#endif
-    vec4  Ka; //0
-    vec4  Kd; //4
-    vec4  Ks; //8
-    float Ns; //12
-    float Ns_offset; //13
-    bool use_map_Ka; //14
-    bool use_map_Kd; //15
-    bool use_map_Ks; //16
-    bool use_map_Ns; //17
-} material;
-
-
-
-uniform vec3 ambient_light;
-
+    layout(std140) uniform Color {
+    #endif
+    vec4  Kd;
+    bool use_map_Kd;
+};
 
 struct PointLight {
     vec3 position_in_view_space;
     vec3 color;
-    vec3 atn;
+    float intensity;
+    float radius;
 };
 
 #if __VERSION__ > 410
-layout(std140, binding=3) uniform Light {
+layout(std140, binding=2) uniform Lights {
 #else
-layout(std140) uniform Lights {
-#endif
-    PointLight light[MAX_POINT_LIGHTS];
-} p_light;
-
+    layout(std140) uniform Lights {
+    #endif
+    vec3 ambient;
+    uint n_p_lights;
+    PointLight p_light[MAX_POINT_LIGHTS];
+};
 
 in vec2 vertex_texcoords_0;
-in vec3 vertex_coords_in_viewspace;
-in vec3 vertex_normal_in_viewspace;
+in vec3 vertex_normals_in_vs;
+in vec3 vertex_coords_in_vs;
 
-
-uniform sampler2D map_Ka;
 uniform sampler2D map_Kd;
-uniform sampler2D map_Ks;
-
-uniform sampler2D maps[3];
 
 void main() {
-vec4 Ka = material.Ka;
-vec4 Kd = material.Kd;
-vec4 Ks = material.Ks;
-float Ns = material.Ns;
-
-if(material.use_map_Ka)
-    Ka *= texture(map_Ka, vertex_texcoords_0);
-if (material.use_map_Kd)
-    Kd *= texture(map_Kd, vertex_texcoords_0);
-if(material.use_map_Ks)
-    Ks.rgb *= texture(map_Ks, vertex_texcoords_0).rgb;
-if(material.use_map_Ns)
-    Ns *= texture(map_Ks, vertex_texcoords_0).a;
-
-vFragColor = Kd;
+    vec3 normal = normalize(vertex_normals_in_vs);
+    
+    vec4 Kd_color = Kd;
+    if (use_map_Kd) {
+        Kd_color = Kd * texture(map_Kd, vertex_texcoords_0);
+    }
+    
+    vFragColor.a = Kd_color.a;
+    vec3 result_color = Kd_color.rgb * ambient;
+    
+    for (uint i = 0; i < n_p_lights && i < MAX_POINT_LIGHTS; i++) {
+        vec3 light_dir = p_light[i].position_in_view_space - vertex_coords_in_vs;
+        float light_dist = length(light_dir);
+        
+        if (light_dist > 0.001) {
+            vec3 L = normalize(light_dir);
+            float diff = max(dot(normal, L), 0.0);
+            result_color += Kd_color.rgb * p_light[i].color * p_light[i].intensity * diff;
+        }
+    }
+    
+    vFragColor.rgb = result_color;
 }

@@ -66,3 +66,6 @@ D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/MeshesMaterials/CM
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/Textures.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/INSTALL.dir
 D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Textures/CMakeFiles/ALL_BUILD.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Phong/CMakeFiles/Phong.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Phong/CMakeFiles/INSTALL.dir
+D:/Grafika 3D/Base/3d 2/Graphics-OpenGL/build/src/Assignments/Phong/CMakeFiles/ALL_BUILD.dir
